@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a3a0a"/>
+      <stop offset="100%" style="stop-color:#2d5a0a"/>
+    </linearGradient>
+    <radialGradient id="oval" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" style="stop-color:#3a7a1a;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#1a3a0a;stop-opacity:0"/>
+    </radialGradient>
+    <linearGradient id="pitch" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#c8a860"/>
+      <stop offset="100%" style="stop-color:#a08040"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="600" fill="url(#bg)"/>
+  <rect width="1200" height="600" fill="url(#oval)"/>
+  <!-- Oval boundary -->
+  <ellipse cx="600" cy="300" rx="520" ry="250" fill="none" stroke="white" stroke-width="3" opacity="0.4" stroke-dasharray="12,8"/>
+  <!-- Inner circle (30-yard) -->
+  <ellipse cx="600" cy="300" rx="250" ry="200" fill="none" stroke="white" stroke-width="2" opacity="0.25"/>
+  <!-- Pitch (rectangular strip in centre) -->
+  <rect x="560" y="130" width="80" height="340" fill="url(#pitch)" rx="4"/>
+  <rect x="560" y="130" width="80" height="340" fill="none" stroke="#8a6830" stroke-width="1" rx="4"/>
+  <!-- Crease lines -->
+  <line x1="548" y1="185" x2="712" y2="185" stroke="white" stroke-width="2.5" opacity="0.9"/>
+  <line x1="548" y1="415" x2="712" y2="415" stroke="white" stroke-width="2.5" opacity="0.9"/>
+  <line x1="548" y1="200" x2="712" y2="200" stroke="white" stroke-width="1.5" opacity="0.6"/>
+  <line x1="548" y1="400" x2="712" y2="400" stroke="white" stroke-width="1.5" opacity="0.6"/>
+  <!-- Stumps at top end -->
+  <rect x="587" y="145" width="7" height="42" fill="#f5e8c0" rx="1"/>
+  <rect x="597" y="145" width="7" height="42" fill="#f5e8c0" rx="1"/>
+  <rect x="607" y="145" width="7" height="42" fill="#f5e8c0" rx="1"/>
+  <!-- Bails on stumps -->
+  <rect x="584" y="143" width="16" height="3" fill="#d4a848" rx="1"/>
+  <rect x="601" y="143" width="16" height="3" fill="#d4a848" rx="1"/>
+  <!-- Stumps at bottom end -->
+  <rect x="587" y="413" width="7" height="42" fill="#f5e8c0" rx="1"/>
+  <rect x="597" y="413" width="7" height="42" fill="#f5e8c0" rx="1"/>
+  <rect x="607" y="413" width="7" height="42" fill="#f5e8c0" rx="1"/>
+  <!-- Bails -->
+  <rect x="584" y="410" width="16" height="3" fill="#d4a848" rx="1"/>
+  <rect x="601" y="410" width="16" height="3" fill="#d4a848" rx="1"/>
+  <!-- Cricket ball -->
+  <circle cx="750" cy="250" r="32" fill="#cc2200"/>
+  <circle cx="750" cy="250" r="32" fill="none" stroke="#8a1500" stroke-width="1"/>
+  <!-- Seam -->
+  <path d="M 718 250 Q 735 230 752 250 Q 769 270 786 250" fill="none" stroke="white" stroke-width="2" opacity="0.8"/>
+  <path d="M 718 250 Q 735 270 752 250 Q 769 230 786 250" fill="none" stroke="white" stroke-width="2" opacity="0.8"/>
+  <!-- Bat (wooden plank) -->
+  <rect x="790" y="300" width="28" height="140" fill="#c8a060" rx="4" transform="rotate(-30 804 370)"/>
+  <rect x="790" y="430" width="28" height="40" fill="#8a6020" rx="2" transform="rotate(-30 804 450)"/>
+</svg>

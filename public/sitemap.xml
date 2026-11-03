@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://sportskeen.com/</loc><changefreq>hourly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://sportskeen.com/about.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://sportskeen.com/contact.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://sportskeen.com/privacy.html</loc><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://sportskeen.com/terms.html</loc><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://sportskeen.com/sport.html?sport=Football</loc><changefreq>hourly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sportskeen.com/sport.html?sport=Cricket</loc><changefreq>hourly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sportskeen.com/sport.html?sport=F1</loc><changefreq>hourly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sportskeen.com/sport.html?sport=Tennis</loc><changefreq>hourly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sportskeen.com/sport.html?sport=Basketball</loc><changefreq>hourly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sportskeen.com/sport.html?sport=Rugby</loc><changefreq>hourly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sportskeen.com/sport.html?sport=Golf</loc><changefreq>hourly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sportskeen.com/sport.html?sport=Athletics</loc><changefreq>hourly</changefreq><priority>0.7</priority></url>
+</urlset>

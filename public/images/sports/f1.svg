@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0a0a"/>
+      <stop offset="100%" style="stop-color:#3d0000"/>
+    </linearGradient>
+    <linearGradient id="track" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2a2a2a"/>
+      <stop offset="100%" style="stop-color:#111"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="80%" r="50%">
+      <stop offset="0%" style="stop-color:#ff3333;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#ff3333;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="600" fill="url(#bg)"/>
+  <rect width="1200" height="600" fill="url(#glow)"/>
+  <!-- Track surface -->
+  <rect x="0" y="440" width="1200" height="160" fill="url(#track)" rx="0"/>
+  <rect x="0" y="438" width="1200" height="6" fill="#333"/>
+  <!-- Track markings -->
+  <rect x="100" y="460" width="80" height="8" fill="white" opacity="0.15" rx="2"/>
+  <rect x="250" y="460" width="80" height="8" fill="white" opacity="0.15" rx="2"/>
+  <rect x="400" y="460" width="80" height="8" fill="white" opacity="0.15" rx="2"/>
+  <rect x="550" y="460" width="80" height="8" fill="white" opacity="0.15" rx="2"/>
+  <rect x="700" y="460" width="80" height="8" fill="white" opacity="0.15" rx="2"/>
+  <rect x="850" y="460" width="80" height="8" fill="white" opacity="0.15" rx="2"/>
+  <rect x="1000" y="460" width="80" height="8" fill="white" opacity="0.15" rx="2"/>
+  <!-- Speed lines (motion blur effect) -->
+  <line x1="0" y1="200" x2="400" y2="300" stroke="#ff3333" stroke-width="1" opacity="0.1"/>
+  <line x1="0" y1="250" x2="350" y2="310" stroke="#ff3333" stroke-width="1.5" opacity="0.08"/>
+  <line x1="0" y1="180" x2="300" y2="290" stroke="white" stroke-width="0.5" opacity="0.06"/>
+  <line x1="0" y1="320" x2="380" y2="330" stroke="#ff3333" stroke-width="1" opacity="0.07"/>
+  <!-- F1 Car silhouette (side view) -->
+  <!-- Main body -->
+  <ellipse cx="620" cy="420" rx="260" ry="28" fill="#cc0000"/>
+  <!-- Cockpit -->
+  <path d="M 540 420 Q 580 370 650 365 Q 720 360 760 390 L 760 420 Z" fill="#aa0000"/>
+  <!-- Cockpit opening -->
+  <path d="M 570 415 Q 605 378 660 372 Q 715 368 745 392 L 745 415 Z" fill="#1a1a1a"/>
+  <!-- Nose cone -->
+  <path d="M 360 418 Q 400 415 440 420 L 450 425 Q 410 428 370 425 Z" fill="#cc0000"/>
+  <path d="M 320 420 L 360 418 L 360 422 L 320 422 Z" fill="#cc0000"/>
+  <!-- Rear wing -->
+  <rect x="830" y="378" width="60" height="6" fill="#cc0000" rx="2"/>
+  <rect x="843" y="384" width="8" height="38" fill="#cc0000"/>
+  <rect x="862" y="384" width="8" height="38" fill="#cc0000"/>
+  <!-- Front wing -->
+  <rect x="295" y="425" width="80" height="5" fill="#cc0000" rx="1"/>
+  <rect x="285" y="430" width="100" height="4" fill="#999" rx="1"/>
+  <!-- Wheels -->
+  <circle cx="430" cy="440" r="38" fill="#222"/>
+  <circle cx="430" cy="440" r="28" fill="#111"/>
+  <circle cx="430" cy="440" r="10" fill="#444"/>
+  <circle cx="800" cy="440" r="38" fill="#222"/>
+  <circle cx="800" cy="440" r="28" fill="#111"/>
+  <circle cx="800" cy="440" r="10" fill="#444"/>
+  <!-- Tire marks -->
+  <ellipse cx="430" cy="478" rx="38" ry="4" fill="black" opacity="0.5"/>
+  <ellipse cx="800" cy="478" rx="38" ry="4" fill="black" opacity="0.5"/>
+  <!-- Red glow under car -->
+  <ellipse cx="620" cy="430" rx="250" ry="12" fill="#ff0000" opacity="0.08"/>
+  <!-- Chequered flag corner -->
+  <rect x="1050" y="30" width="150" height="150" fill="none"/>
+  <rect x="1050" y="30" width="30" height="30" fill="white" opacity="0.6"/>
+  <rect x="1080" y="30" width="30" height="30" fill="black" opacity="0.6"/>
+  <rect x="1110" y="30" width="30" height="30" fill="white" opacity="0.6"/>
+  <rect x="1140" y="30" width="30" height="30" fill="black" opacity="0.6"/>
+  <rect x="1050" y="60" width="30" height="30" fill="black" opacity="0.6"/>
+  <rect x="1080" y="60" width="30" height="30" fill="white" opacity="0.6"/>
+  <rect x="1110" y="60" width="30" height="30" fill="black" opacity="0.6"/>
+  <rect x="1140" y="60" width="30" height="30" fill="white" opacity="0.6"/>
+  <rect x="1050" y="90" width="30" height="30" fill="white" opacity="0.6"/>
+  <rect x="1080" y="90" width="30" height="30" fill="black" opacity="0.6"/>
+  <rect x="1110" y="90" width="30" height="30" fill="white" opacity="0.6"/>
+  <rect x="1140" y="90" width="30" height="30" fill="black" opacity="0.6"/>
+</svg>

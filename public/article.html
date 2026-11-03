@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="pageTitle">Article — SportsKeen</title>
+  <meta name="description" content="Read the full story on SportsKeen." id="pageDesc" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ===== TICKER ===== -->
+<div class="ticker-wrap" id="tickerWrap">
+  <div class="ticker-label"><span class="live-dot"></span>LIVE</div>
+  <div class="ticker-track" id="tickerTrack">
+    <div class="ticker-inner">
+      <span class="ticker-item">⚡ SportsKeen — Your pulse on global sport</span>
+      <span class="ticker-sep">•</span>
+      <span class="ticker-item">Breaking news from Football, Cricket, F1, Tennis and more</span>
+      <span class="ticker-sep">•</span>
+      <span class="ticker-item">Stay tuned for live updates</span>
+      <span class="ticker-sep">•</span>
+      <span class="ticker-item">⚡ SportsKeen — Your pulse on global sport</span>
+      <span class="ticker-sep">•</span>
+      <span class="ticker-item">Breaking news from Football, Cricket, F1, Tennis and more</span>
+      <span class="ticker-sep">•</span>
+      <span class="ticker-item">Stay tuned for live updates</span>
+      <span class="ticker-sep">•</span>
+    </div>
+  </div>
+</div>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner container">
+    <a href="index.html" class="site-logo">
+      <div class="logo-wordmark"><span class="lw-sports">SPORTS</span><span class="lw-keen">KEEN</span></div>
+      <div class="logo-divider"></div>
+      <div class="logo-tagline"><span>Breaking</span><span>Sports</span><span>News</span></div>
+    </a>
+    <div class="header-search">
+      <input type="search" id="searchInput" placeholder="Search sports news…" autocomplete="off" />
+      <button class="search-btn" id="searchBtn" aria-label="Search">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+    </div>
+    <div class="header-actions">
+      <div class="live-badge"><span class="live-dot"></span>LIVE</div>
+    </div>
+  </div>
+</header>
+
+<!-- ===== SPORT NAV ===== -->
+<nav class="sport-nav" id="sportNav">
+  <div class="container">
+    <div class="sport-nav-inner">
+      <a href="index.html" class="nav-pill" data-sport="all">All Sports</a>
+      <a href="sport.html?sport=Football" class="nav-pill" data-sport="Football">⚽ Football</a>
+      <a href="sport.html?sport=Cricket" class="nav-pill" data-sport="Cricket">🏏 Cricket</a>
+      <a href="sport.html?sport=F1" class="nav-pill" data-sport="F1">🏎️ F1</a>
+      <a href="sport.html?sport=Tennis" class="nav-pill" data-sport="Tennis">🎾 Tennis</a>
+      <a href="sport.html?sport=Basketball" class="nav-pill" data-sport="Basketball">🏀 Basketball</a>
+      <a href="sport.html?sport=Rugby" class="nav-pill" data-sport="Rugby">🏉 Rugby</a>
+      <a href="sport.html?sport=Golf" class="nav-pill" data-sport="Golf">⛳ Golf</a>
+      <a href="sport.html?sport=Athletics" class="nav-pill" data-sport="Athletics">🏃 Athletics</a>
+      <span class="nav-divider"></span>
+      <a href="about.html" class="nav-pill nav-link">About</a>
+      <a href="contact.html" class="nav-pill nav-link">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== SEARCH OVERLAY ===== -->
+<div class="search-overlay hidden" id="searchOverlay">
+  <div class="container">
+    <div class="search-header">
+      <h2 id="searchResultsTitle">Search Results</h2>
+      <button class="close-search" id="closeSearch">✕ Close</button>
+    </div>
+    <div class="card-grid-4" id="searchResults"></div>
+  </div>
+</div>
+
+<!-- ===== BREADCRUMB ===== -->
+<div class="breadcrumb" id="breadcrumbWrap">
+  <div class="container">
+    <div class="breadcrumb-inner">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb-sep">›</span>
+      <a href="#" id="breadcrumbSport">Sport</a>
+      <span class="breadcrumb-sep">›</span>
+      <span id="breadcrumbTitle">Article</span>
+    </div>
+  </div>
+</div>
+
+<!-- ===== ARTICLE HERO ===== -->
+<div id="articleHeroWrap"></div>
+
+<!-- ===== ARTICLE LAYOUT ===== -->
+<div class="container">
+  <div class="article-layout">
+
+    <!-- MAIN ARTICLE -->
+    <article class="article-main" id="articleMain">
+
+      <!-- Article header -->
+      <div class="article-header" id="articleHeader">
+        <div class="article-header-meta">
+          <span class="sport-badge" id="articleBadge">Sport</span>
+          <span class="article-source" id="articleSource">SportsKeen</span>
+          <span class="article-time" id="articleTime">Just now</span>
+        </div>
+        <h1 class="article-title" id="articleTitle">Loading article…</h1>
+        <div class="article-byline" id="articleByline">SportsKeen Editorial Team · Loading…</div>
+      </div>
+
+      <!-- Article body -->
+      <div class="article-body" id="articleBody">
+        <p class="article-summary-para" id="articleSummary">Loading summary…</p>
+
+        <div class="article-editorial-note" id="articleEditorialNote">
+          This story was originally reported by <strong id="articleSourceName">the source</strong>. SportsKeen provides editorial curation and analysis of the world's top sports news.
+        </div>
+
+        <p id="bodyPara1">Loading content…</p>
+        <p id="bodyPara2"></p>
+        <p id="bodyPara3"></p>
+      </div>
+
+      <!-- CTA -->
+      <div class="article-cta">
+        <a href="#" class="article-cta-btn" id="articleCTA" target="_blank" rel="noopener noreferrer">
+          📖 Read Full Story at Source →
+        </a>
+      </div>
+
+      <!-- Share -->
+      <div class="share-section">
+        <div class="share-label">Share this story:</div>
+        <div class="share-buttons">
+          <button class="share-btn share-btn-twitter" id="shareTwitter">𝕏 Twitter</button>
+          <button class="share-btn share-btn-facebook" id="shareFacebook">f Facebook</button>
+          <button class="share-btn share-btn-copy" id="shareCopy">🔗 Copy Link</button>
+        </div>
+      </div>
+
+      <hr class="article-divider" />
+
+      <!-- Related articles -->
+      <div class="related-section">
+        <div class="related-title" id="relatedTitle">More Stories</div>
+        <div class="related-grid" id="relatedGrid">
+          <div class="skeleton-card" style="height:220px;"></div>
+          <div class="skeleton-card" style="height:220px;"></div>
+          <div class="skeleton-card" style="height:220px;"></div>
+          <div class="skeleton-card" style="height:220px;"></div>
+        </div>
+      </div>
+
+      <!-- AD: Leaderboard footer -->
+      <div class="ad-wrap">
+        <div class="ad-unit ad-leaderboard" data-ad-size="728×90" data-ad-pos="Article Footer Leaderboard">
+          <span class="ad-label">Advertisement · 728×90 Leaderboard</span>
+        </div>
+      </div>
+
+    </article>
+
+    <!-- SIDEBAR -->
+    <aside class="article-sidebar">
+
+      <!-- AD MPU 1 -->
+      <div class="ad-unit ad-mpu" data-ad-size="300×250" data-ad-pos="Article Sidebar MPU 1">
+        <span class="ad-label">Advertisement · 300×250 MPU</span>
+      </div>
+
+      <!-- Latest in category -->
+      <div class="sidebar-widget">
+        <div class="widget-header" id="latestWidgetHeader">🔥 Latest News</div>
+        <ol class="trending-list" id="latestList">
+          <li class="skeleton-list-item"></li>
+          <li class="skeleton-list-item"></li>
+          <li class="skeleton-list-item"></li>
+          <li class="skeleton-list-item"></li>
+          <li class="skeleton-list-item"></li>
+        </ol>
+      </div>
+
+      <!-- AD MPU 2 -->
+      <div class="ad-unit ad-mpu" data-ad-size="300×250" data-ad-pos="Article Sidebar MPU 2">
+        <span class="ad-label">Advertisement · 300×250 MPU</span>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="sidebar-widget newsletter-widget">
+        <div class="widget-header">📬 Daily Digest</div>
+        <p class="newsletter-text">Get the top sports stories delivered every morning.</p>
+        <form class="newsletter-form" id="newsletterFormArticle">
+          <input type="email" placeholder="your@email.com" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+
+    </aside>
+
+  </div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">⚡SportsKeen</div>
+        <p class="footer-tagline">Your pulse on global sport. Breaking news, deep analysis, live updates.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+          <a href="#" class="social-link" aria-label="Facebook">f</a>
+          <a href="#" class="social-link" aria-label="Instagram">ig</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Sports</h4>
+        <ul>
+          <li><a href="sport.html?sport=Football">⚽ Football</a></li>
+          <li><a href="sport.html?sport=Cricket">🏏 Cricket</a></li>
+          <li><a href="sport.html?sport=F1">🏎️ F1</a></li>
+          <li><a href="sport.html?sport=Tennis">🎾 Tennis</a></li>
+          <li><a href="sport.html?sport=Basketball">🏀 Basketball</a></li>
+          <li><a href="sport.html?sport=Rugby">🏉 Rugby</a></li>
+          <li><a href="sport.html?sport=Golf">⛳ Golf</a></li>
+          <li><a href="sport.html?sport=Athletics">🏃 Athletics</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Advertise</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-newsletter">
+        <h4>Newsletter</h4>
+        <p>Daily sports highlights to your inbox.</p>
+        <form class="newsletter-form footer-nl-form" id="newsletterFormFooter">
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit">Go</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-sources">
+      <p>SportsKeen aggregates and curates news from publicly available RSS feeds and sports media outlets. All original reporting credit belongs to the respective source publications.</p>
+    </div>
+    <div class="ad-unit ad-leaderboard footer-ad" data-ad-size="728×90" data-ad-pos="Footer Leaderboard">
+      <span class="ad-label">Advertisement · 728×90 Footer Leaderboard</span>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 SportsKeen. All rights reserved.</span>
+      <span>Built with ❤️ for sports fans everywhere.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== STICKY BOTTOM AD ===== -->
+<div class="sticky-bottom-ad hidden" id="stickyBottomAd">
+  <button class="sticky-ad-close" id="stickyAdClose" aria-label="Close ad">✕</button>
+  <div class="ad-unit ad-leaderboard" data-ad-size="728×90" data-ad-pos="Sticky Bottom">
+    <span class="ad-label">Advertisement · 728×90 Sticky Bottom</span>
+  </div>
+</div>
+
+<!-- ===== SCROLL TO TOP ===== -->
+<button class="scroll-top-btn hidden" id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+
+<!-- ===== TOAST ===== -->
+<div class="toast hidden" id="toastEl"></div>
+
+<script>
+(function() {
+  const EMOJI = {Football:'⚽',Cricket:'🏏',F1:'🏎️',Tennis:'🎾',Basketball:'🏀',Rugby:'🏉',Golf:'⛳',Athletics:'🏃'};
+  const GRAD = {
+    Football:['#064E3B','#16A34A'], Cricket:['#78350F','#D97706'], F1:['#7F1D1D','#DC2626'],
+    Tennis:['#3B0764','#7C3AED'], Basketball:['#7C2D12','#EA580C'], Rugby:['#0C4A6E','#0284C7'],
+    Golf:['#1A2E05','#65A30D'], Athletics:['#4A044E','#A21CAF']
+  };
+
+  // Body paragraph templates per sport for editorial padding
+  const BODY_PARAS = {
+    Football: [
+      "The beautiful game continues to captivate billions of fans worldwide, with every match bringing moments of brilliance and heartbreak in equal measure. Tactical evolutions and generational talents have kept football at the pinnacle of global sport, driving record-breaking transfer fees and television deals that underscore its unparalleled commercial power.",
+      "Club managers and national coaches alike face mounting pressure to deliver results in an era where data analytics and sports science have transformed preparation at every level. Player welfare, mental health awareness and the relentless fixture calendar remain hot-button topics as stakeholders debate the long-term health of the game.",
+      "From the roar of packed stadiums to the quiet dedication of grassroots academies, football's reach touches every corner of society. Emerging markets in Asia, North America and Africa continue to grow their fan bases, promising the next chapter in the sport's remarkable global story."
+    ],
+    Cricket: [
+      "Cricket's multi-format landscape — spanning Test matches, ODIs and the explosive T20 franchise circuit — creates a demanding environment for players who must adapt their skills across radically different conditions and game plans. The sport's governing bodies face the perennial challenge of balancing tradition with the commercial imperatives of modern entertainment.",
+      "The rise of franchise tournaments has reshaped the cricketing calendar and created a new class of globally mobile professional player. Bilateral series and marquee ICC events compete fiercely for broadcasting windows, while player workload management has become a priority discussion at the highest levels of administration.",
+      "Off the field, grassroots participation programmes and investment in infrastructure are broadening cricket's geographic footprint beyond its traditional strongholds. The sport's rich history and passionate supporters continue to fuel its identity as a cornerstone of culture in South Asia, the Caribbean and beyond."
+    ],
+    F1: [
+      "Formula 1's renaissance as a global entertainment property has attracted fresh investment, new teams and a younger demographic that has propelled viewing figures to record highs. The technical arms race between constructor giants and the introduction of cost-cap regulations have brought unprecedented competitiveness to the championship.",
+      "The pursuit of the hundredths-of-a-second margins that define success in Formula 1 demands extraordinary collaboration between engineers, strategists and drivers. Wind tunnel hours, simulation data and real-time telemetry are dissected obsessively as teams search for the aerodynamic and power-unit gains that translate into championship points.",
+      "Sustainability is reshaping Formula 1's identity as the sport commits to net-zero carbon by 2030 through advanced fuel technologies and broader operational changes. The convergence of cutting-edge engineering and growing environmental responsibility is positioning F1 as a laboratory for automotive innovation with direct road-car implications."
+    ],
+    Tennis: [
+      "The professional tennis tour operates across four Grand Slam majors, Masters 1000 events and smaller tournaments that together form one of sport's most gruelling annual circuits. Players must navigate clay, grass and hardcourt surfaces while managing the cumulative physical and mental toll of near-constant travel and competition.",
+      "The generational shift at the summit of men's and women's tennis has intensified rivalries and energised fanbases around the world. Rising stars armed with powerful baseline games and improved fitness regimes are challenging established champions, producing the kind of compelling narratives that sustain the sport's commercial momentum.",
+      "Tennis continues to tackle issues of prize money equity, player representation and schedule reform as it seeks to enhance conditions for a deeply global player pool. Innovations in court technology, officiating and streaming distribution are bringing new audiences closer to the drama of elite competition than ever before."
+    ],
+    Basketball: [
+      "The NBA's influence on global basketball culture — from fashion and music to data analytics and roster construction — makes it far more than a sports league. Its teams represent cities and communities with fierce pride, while its stars transcend sport to become cultural icons with massive commercial footprints across every continent.",
+      "Positionless basketball, three-point revolution and load management strategies have redefined how teams are built and games are played in the modern era. Front offices that blend traditional scouting with sophisticated statistical models have gained competitive advantages that are reshaping the landscape of the league.",
+      "International basketball continues its rapid growth, with players from Europe, Africa and Asia rising to star status in the NBA and bringing new fan communities to the sport. The FIBA World Cup and Olympic tournament serve as showcases for the sport's global reach and the increasing quality of play outside North America."
+    ],
+    Rugby: [
+      "Rugby's dual professional codes — union and league — offer contrasting but equally passionate sporting experiences that draw devoted followings in their respective heartlands. The sport's physicality, team cohesion requirements and tactical complexity create a compelling product that rewards both the casual viewer and the deeply knowledgeable fan.",
+      "Player welfare concerns around contact injury and long-term neurological health have prompted world rugby authorities to implement new protocols around training loads, tackle technique and return-to-play procedures. These measures reflect the sport's determination to ensure its future sustainability at all levels of participation.",
+      "The growth of the World Cup and the expanding professional calendar has opened new territories for rugby, with competitions in Asia, North America and South America gaining momentum. Commercial investment and broadcast deals are providing the infrastructure needed to nurture homegrown talent in emerging rugby nations."
+    ],
+    Golf: [
+      "Professional golf's landscape has been dramatically reshaped by the emergence of new competition formats and significant investment from sovereign wealth funds seeking to leverage the sport's affluent global audience. The debate about the game's structure, its traditions and its commercial future continues to animate discussions across the sport.",
+      "The major championships — the Masters, US Open, The Open Championship and PGA Championship — remain the ultimate benchmarks of a golfer's legacy, combining technical mastery with mental fortitude under conditions designed to expose every weakness. Preparation for majors has become an increasingly scientific endeavour at the elite level.",
+      "Golf's participation rates and inclusivity initiatives are central to its long-term health, as administrators work to reduce barriers around cost, access and the time commitment the sport traditionally demands. Technology in equipment, course design and instruction is opening the game to players who might previously have been deterred."
+    ],
+    Athletics: [
+      "Track and field athletics sits at the heart of the Olympic movement, embodying the pursuit of human physical limits across disciplines that require contrasting physiological attributes and years of specialised training. World records in sprinting, distance running, jumping and throwing events capture global attention and inspire the next generation of competitors.",
+      "The anti-doping battle remains one of athletics' defining challenges, with WADA and national agencies constantly updating testing protocols and intelligence-gathering methods in response to evolving prohibited substances and methods. The sport's credibility depends on the rigour and consistency of the global anti-doping framework.",
+      "Marathon running has undergone a popular revolution, with millions of recreational runners participating in city races worldwide alongside elite performers who are redefining what the human body can achieve over 26.2 miles. Advances in footwear technology, nutrition science and training methodology have produced a new era of performance breakthroughs."
+    ]
+  };
+
+  // Default paragraphs for unknown sports
+  const DEFAULT_PARAS = [
+    "Sport at its highest level represents the pinnacle of human achievement — years of dedication, sacrifice and incremental improvement compressed into moments of public performance that can define careers and inspire generations. The world's greatest athletes share a combination of natural gift and extraordinary work ethic that separates them from their peers.",
+    "The business of sport has grown enormously in the digital era, with broadcasting rights, sponsorship deals and direct-to-consumer platforms generating revenues that fund elite competition at an unprecedented scale. This commercial success brings with it scrutiny around governance, integrity and the equitable distribution of financial rewards.",
+    "At its grassroots, sport remains a powerful force for community, education and social cohesion. Programmes that use sporting frameworks to teach life skills, build confidence and bring diverse groups together demonstrate the broader value of athletic culture beyond the scoreboard and the podium."
+  ];
+
+  // ── Helpers ──
+
+  function esc(str) {
+    return String(str||'')
+      .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  function timeAgo(dateStr) {
+    if (!dateStr) return '';
+    const d = new Date(dateStr);
+    if (isNaN(d)) return '';
+    const diff = (Date.now() - d.getTime()) / 1000;
+    if (diff < 60) return 'Just now';
+    if (diff < 3600) return Math.floor(diff/60) + 'm ago';
+    if (diff < 86400) return Math.floor(diff/3600) + 'h ago';
+    if (diff < 604800) return Math.floor(diff/86400) + 'd ago';
+    return d.toLocaleDateString('en-GB',{day:'numeric',month:'short'});
+  }
+
+  function formatDate(dateStr) {
+    if (!dateStr) return '';
+    const d = new Date(dateStr);
+    if (isNaN(d)) return '';
+    return d.toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'});
+  }
+
+  function placeholder(s) {
+    const g = GRAD[s] || ['#2D3748','#4A5568'];
+    return `https://via.placeholder.com/1200x500/${g[0].replace('#','')}/ffffff?text=${encodeURIComponent((EMOJI[s]||'🏆')+' '+s)}`;
+  }
+
+  function showToast(msg) {
+    const t = document.getElementById('toastEl');
+    if (!t) return;
+    t.textContent = msg;
+    t.classList.remove('hidden');
+    clearTimeout(t._timer);
+    t._timer = setTimeout(() => t.classList.add('hidden'), 3000);
+  }
+
+  function openArticle(article, allArticles) {
+    try {
+      sessionStorage.setItem('sk_article', JSON.stringify(article));
+      if (allArticles) sessionStorage.setItem('sk_allArticles', JSON.stringify(allArticles));
+    } catch(e) {}
+    window.location.href = 'article.html';
+  }
+
+  // ── Card builder for related ──
+
+  function makeGridCard(a, allArticles) {
+    const div = document.createElement('div');
+    div.className = 'grid-card';
+    const s = a.category || 'Sports';
+    const imgSrc = a.image || placeholder(s);
+    div.innerHTML = `
+      <div class="gc-img-wrap">
+        <img class="gc-img" src="${esc(imgSrc)}" alt="${esc(a.title)}" loading="lazy" onerror="this.src='${placeholder(s)}'" />
+        <span class="sport-badge badge-${esc(s)}">${esc(EMOJI[s]||'')} ${esc(s)}</span>
+      </div>
+      <div class="gc-body">
+        <div class="gc-title">${esc(a.title)}</div>
+        <div class="gc-meta">${esc(a.source||'SportsKeen')} · ${timeAgo(a.pubDate)}</div>
+      </div>`;
+    div.addEventListener('click', () => openArticle(a, allArticles));
+    return div;
+  }
+
+  // ── Render article ──
+
+  function renderArticle() {
+    let article, allArticles;
+    try {
+      const raw = sessionStorage.getItem('sk_article');
+      article = raw ? JSON.parse(raw) : null;
+      const rawAll = sessionStorage.getItem('sk_allArticles');
+      allArticles = rawAll ? JSON.parse(rawAll) : [];
+    } catch(e) {
+      article = null;
+      allArticles = [];
+    }
+
+    if (!article) {
+      document.getElementById('articleTitle').textContent = 'Article not found.';
+      document.getElementById('articleSummary').textContent = 'Please go back to the homepage and select an article.';
+      document.getElementById('bodyPara1').textContent = '';
+      return;
+    }
+
+    const sport = article.category || 'Sports';
+    const em = EMOJI[sport] || '🏆';
+    const grad = GRAD[sport] || ['#0D0D1A','#1a1a2e'];
+    const paras = BODY_PARAS[sport] || DEFAULT_PARAS;
+
+    // Page title and meta
+    document.title = `${article.title} — SportsKeen`;
+    const metaDesc = document.getElementById('pageDesc');
+    if (metaDesc) metaDesc.content = article.summary || article.title;
+
+    // Nav active state
+    document.querySelectorAll('.nav-pill').forEach(p => {
+      p.classList.remove('active');
+      if (p.dataset.sport === sport) p.classList.add('active');
+    });
+
+    // Breadcrumb
+    const breadSport = document.getElementById('breadcrumbSport');
+    if (breadSport) {
+      breadSport.textContent = `${em} ${sport}`;
+      breadSport.href = `sport.html?sport=${encodeURIComponent(sport)}`;
+    }
+    const breadTitle = document.getElementById('breadcrumbTitle');
+    if (breadTitle) breadTitle.textContent = article.title.length > 60 ? article.title.slice(0,57)+'…' : article.title;
+
+    // Hero
+    const heroWrap = document.getElementById('articleHeroWrap');
+    if (heroWrap) {
+      if (article.image) {
+        heroWrap.innerHTML = `
+          <div class="article-hero">
+            <img src="${esc(article.image)}" alt="${esc(article.title)}" onerror="this.onerror=null;this.parentElement.style.background='linear-gradient(135deg,${grad[0]},${grad[1]})';" />
+            <div class="article-hero-gradient"></div>
+          </div>`;
+      } else {
+        heroWrap.innerHTML = `
+          <div class="article-hero-gradient-only" style="background:linear-gradient(135deg,${grad[0]},${grad[1]});display:flex;align-items:center;justify-content:center;">
+            <span style="font-size:72px;opacity:.4;">${em}</span>
+          </div>`;
+      }
+    }
+
+    // Badge
+    const badge = document.getElementById('articleBadge');
+    if (badge) {
+      badge.textContent = `${em} ${sport}`;
+      badge.className = `sport-badge badge-${sport}`;
+    }
+
+    // Source + time
+    const sourceEl = document.getElementById('articleSource');
+    if (sourceEl) sourceEl.textContent = article.source || 'SportsKeen';
+    const timeEl = document.getElementById('articleTime');
+    if (timeEl) timeEl.textContent = timeAgo(article.pubDate);
+
+    // Title
+    const titleEl = document.getElementById('articleTitle');
+    if (titleEl) titleEl.textContent = article.title;
+
+    // Byline
+    const bylineEl = document.getElementById('articleByline');
+    if (bylineEl) bylineEl.textContent = `SportsKeen Editorial Team · ${formatDate(article.pubDate)}`;
+
+    // Summary
+    const summaryEl = document.getElementById('articleSummary');
+    if (summaryEl) summaryEl.textContent = article.summary || '';
+
+    const editorialNote = document.getElementById('articleEditorialNote');
+    const bodyPara1 = document.getElementById('bodyPara1');
+    const bodyPara2 = document.getElementById('bodyPara2');
+    const bodyPara3 = document.getElementById('bodyPara3');
+    const ctaBtn = document.getElementById('articleCTA');
+
+    if (article.original) {
+      // ── ORIGINAL SPORTSKEEN ARTICLE ──────────────────────────
+      // Add badge next to byline
+      const bylineEl = document.getElementById('articleByline');
+      if (bylineEl) bylineEl.innerHTML = `<span style="display:inline-block;background:#E8152A;color:#fff;font-size:10px;font-weight:700;letter-spacing:2px;padding:2px 8px;border-radius:3px;margin-right:8px;vertical-align:middle;">SPORTSKEEN ORIGINAL</span>SportsKeen Editorial · ${formatDate(article.pubDate)}`;
+
+      // Show full content
+      if (editorialNote) editorialNote.style.display = 'none';
+      if (bodyPara1) bodyPara1.style.display = 'none';
+      if (bodyPara2) bodyPara2.style.display = 'none';
+      if (bodyPara3) bodyPara3.style.display = 'none';
+
+      // Inject full article HTML
+      const fullContent = document.createElement('div');
+      fullContent.className = 'article-full-content';
+      fullContent.innerHTML = article.content || '';
+      if (summaryEl) summaryEl.insertAdjacentElement('afterend', fullContent);
+
+      // Hide external CTA
+      if (ctaBtn) ctaBtn.closest('.article-cta').style.display = 'none';
+    } else {
+      // ── RSS / CURATED ARTICLE ─────────────────────────────────
+      const sourceNameEl = document.getElementById('articleSourceName');
+      if (sourceNameEl) sourceNameEl.textContent = article.source || 'the original publisher';
+      if (bodyPara1) bodyPara1.textContent = paras[0] || '';
+      if (bodyPara2) bodyPara2.textContent = paras[1] || '';
+      if (bodyPara3) bodyPara3.textContent = paras[2] || '';
+      if (ctaBtn) {
+        ctaBtn.href = article.link || '#';
+        ctaBtn.textContent = `📖 Read Full Story at ${article.source || 'Source'} →`;
+      }
+    }
+
+    // Share buttons
+    const twitterBtn = document.getElementById('shareTwitter');
+    const fbBtn = document.getElementById('shareFacebook');
+    const copyBtn = document.getElementById('shareCopy');
+
+    const shareUrl = encodeURIComponent(window.location.href);
+    const shareText = encodeURIComponent(article.title + ' — via SportsKeen');
+
+    if (twitterBtn) {
+      twitterBtn.addEventListener('click', () => {
+        window.open(`https://twitter.com/intent/tweet?text=${shareText}&url=${shareUrl}`, '_blank', 'width=600,height=400');
+      });
+    }
+    if (fbBtn) {
+      fbBtn.addEventListener('click', () => {
+        window.open(`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`, '_blank', 'width=600,height=400');
+      });
+    }
+    if (copyBtn) {
+      copyBtn.addEventListener('click', () => {
+        navigator.clipboard.writeText(window.location.href).then(() => {
+          showToast('✅ Link copied to clipboard!');
+        }).catch(() => {
+          showToast('Link: ' + window.location.href);
+        });
+      });
+    }
+
+    // Related articles
+    const relatedTitle = document.getElementById('relatedTitle');
+    if (relatedTitle) relatedTitle.textContent = `More ${sport} Stories`;
+
+    const relatedGrid = document.getElementById('relatedGrid');
+    if (relatedGrid && allArticles.length) {
+      relatedGrid.innerHTML = '';
+      const related = allArticles
+        .filter(a => a.category === sport && a.title !== article.title)
+        .slice(0, 4);
+      if (related.length > 0) {
+        related.forEach(a => relatedGrid.appendChild(makeGridCard(a, allArticles)));
+      } else {
+        // Fall back to any articles
+        allArticles
+          .filter(a => a.title !== article.title)
+          .slice(0, 4)
+          .forEach(a => relatedGrid.appendChild(makeGridCard(a, allArticles)));
+      }
+    }
+
+    // Sidebar: latest in category
+    const latestHeader = document.getElementById('latestWidgetHeader');
+    if (latestHeader) latestHeader.textContent = `🔥 More ${sport}`;
+
+    const latestList = document.getElementById('latestList');
+    if (latestList && allArticles.length) {
+      latestList.innerHTML = '';
+      const latest = allArticles
+        .filter(a => a.category === sport && a.title !== article.title)
+        .slice(0, 8);
+      (latest.length ? latest : allArticles.slice(0,8)).forEach(a => {
+        const li = document.createElement('li');
+        li.textContent = a.title;
+        li.addEventListener('click', () => openArticle(a, allArticles));
+        latestList.appendChild(li);
+      });
+    }
+  }
+
+  // ── Setup newsletter ──
+
+  function setupNewsletterForms() {
+    ['newsletterFormArticle','newsletterFormFooter'].forEach(id => {
+      const form = document.getElementById(id);
+      if (!form) return;
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        const email = form.querySelector('input[type="email"]').value;
+        if (email) { showToast(`✅ Subscribed! Check ${email}`); form.reset(); }
+      });
+    });
+  }
+
+  // ── Sticky ad ──
+
+  function setupStickyAd() {
+    const ad = document.getElementById('stickyBottomAd');
+    const close = document.getElementById('stickyAdClose');
+    if (!ad) return;
+    setTimeout(() => ad.classList.remove('hidden'), 5000);
+    if (close) close.addEventListener('click', () => ad.classList.add('hidden'));
+  }
+
+  // ── Scroll top ──
+
+  function setupScrollTop() {
+    const btn = document.getElementById('scrollTopBtn');
+    if (!btn) return;
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 400) btn.classList.remove('hidden');
+      else btn.classList.add('hidden');
+    });
+    btn.addEventListener('click', () => window.scrollTo({top:0,behavior:'smooth'}));
+  }
+
+  // ── Search ──
+
+  function setupSearch() {
+    const input = document.getElementById('searchInput');
+    const btn = document.getElementById('searchBtn');
+    if (!input) return;
+    let allArticles = [];
+    try { allArticles = JSON.parse(sessionStorage.getItem('sk_allArticles') || '[]'); } catch(e) {}
+
+    const overlay = document.getElementById('searchOverlay');
+    const resultsEl = document.getElementById('searchResults');
+    const titleEl = document.getElementById('searchResultsTitle');
+    const closeBtn = document.getElementById('closeSearch');
+    let timer = null;
+
+    function doSearch(q) {
+      if (!q || q.length < 2) { if (overlay) overlay.classList.add('hidden'); return; }
+      const ql = q.toLowerCase();
+      const hits = allArticles.filter(a =>
+        (a.title||'').toLowerCase().includes(ql) || (a.summary||'').toLowerCase().includes(ql)
+      ).slice(0, 16);
+      if (titleEl) titleEl.textContent = `Search: "${q}" (${hits.length} results)`;
+      if (resultsEl) {
+        resultsEl.innerHTML = '';
+        hits.forEach(a => resultsEl.appendChild(makeGridCard(a, allArticles)));
+        if (!hits.length) resultsEl.innerHTML = '<p style="grid-column:1/-1;color:var(--text-muted);padding:20px 0;">No results found.</p>';
+      }
+      if (overlay) overlay.classList.remove('hidden');
+    }
+
+    input.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(() => doSearch(input.value.trim()), 320); });
+    if (btn) btn.addEventListener('click', () => doSearch(input.value.trim()));
+    input.addEventListener('keydown', e => {
+      if (e.key === 'Enter') doSearch(input.value.trim());
+      if (e.key === 'Escape') { if (overlay) overlay.classList.add('hidden'); input.value = ''; }
+    });
+    if (closeBtn) closeBtn.addEventListener('click', () => { if (overlay) overlay.classList.add('hidden'); input.value = ''; });
+  }
+
+  // ── Boot ──
+
+  document.addEventListener('DOMContentLoaded', () => {
+    renderArticle();
+    setupNewsletterForms();
+    setupStickyAd();
+    setupScrollTop();
+    setupSearch();
+  });
+
+})();
+</script>
+<div class="cookie-banner" id="cookieBanner">
+  <div class="cookie-text">We use cookies to improve your experience and to serve personalised advertising via Google AdSense and analytics tools. By clicking "Accept", you consent to our use of cookies. See our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Use</a> for details.</div>
+  <div class="cookie-actions">
+    <button class="cookie-btn-decline" id="cookieDecline">Decline</button>
+    <button class="cookie-btn-accept" id="cookieAccept">Accept All Cookies</button>
+  </div>
+</div>
+<script>(function(){var b=document.getElementById('cookieBanner'),c=localStorage.getItem('sk_cookie_consent');if(c){b.classList.add('hidden');return;}document.getElementById('cookieAccept').addEventListener('click',function(){localStorage.setItem('sk_cookie_consent','accepted');b.classList.add('hidden');});document.getElementById('cookieDecline').addEventListener('click',function(){localStorage.setItem('sk_cookie_consent','declined');b.classList.add('hidden');});})();</script>
+</body>
+</html>

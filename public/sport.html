@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="pageTitle">Sport News — SportsKeen</title>
+  <meta name="description" content="Latest sport news on SportsKeen." id="pageDesc" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ===== TICKER ===== -->
+<div class="ticker-wrap" id="tickerWrap">
+  <div class="ticker-label"><span class="live-dot"></span>LIVE</div>
+  <div class="ticker-track" id="tickerTrack">
+    <span class="ticker-item">Loading headlines…</span>
+  </div>
+</div>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner container">
+    <a href="index.html" class="site-logo">
+      <div class="logo-wordmark"><span class="lw-sports">SPORTS</span><span class="lw-keen">KEEN</span></div>
+      <div class="logo-divider"></div>
+      <div class="logo-tagline"><span>Breaking</span><span>Sports</span><span>News</span></div>
+    </a>
+    <div class="header-search">
+      <input type="search" id="searchInput" placeholder="Search sports news…" autocomplete="off" />
+      <button class="search-btn" id="searchBtn" aria-label="Search">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+    </div>
+    <div class="header-actions">
+      <div class="live-badge"><span class="live-dot"></span>LIVE</div>
+      <button class="refresh-btn" id="refreshBtn" title="Refresh">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+        Refresh
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== SPORT NAV ===== -->
+<nav class="sport-nav" id="sportNav">
+  <div class="container">
+    <div class="sport-nav-inner">
+      <a href="index.html" class="nav-pill" data-sport="all">All Sports</a>
+      <a href="sport.html?sport=Football" class="nav-pill" data-sport="Football">⚽ Football</a>
+      <a href="sport.html?sport=Cricket" class="nav-pill" data-sport="Cricket">🏏 Cricket</a>
+      <a href="sport.html?sport=F1" class="nav-pill" data-sport="F1">🏎️ F1</a>
+      <a href="sport.html?sport=Tennis" class="nav-pill" data-sport="Tennis">🎾 Tennis</a>
+      <a href="sport.html?sport=Basketball" class="nav-pill" data-sport="Basketball">🏀 Basketball</a>
+      <a href="sport.html?sport=Rugby" class="nav-pill" data-sport="Rugby">🏉 Rugby</a>
+      <a href="sport.html?sport=Golf" class="nav-pill" data-sport="Golf">⛳ Golf</a>
+      <a href="sport.html?sport=Athletics" class="nav-pill" data-sport="Athletics">🏃 Athletics</a>
+      <span class="nav-divider"></span>
+      <a href="about.html" class="nav-pill nav-link">About</a>
+      <a href="contact.html" class="nav-pill nav-link">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== TRENDING BAR ===== -->
+<div class="trending-bar" id="trendingBarWrap">
+  <div class="container">
+    <span class="trending-label">🔥 Trending:</span>
+    <div class="trending-scroll" id="trendingBar">
+      <span class="trend-pill skeleton-pill">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    </div>
+  </div>
+</div>
+
+<!-- ===== SPORT HERO BANNER ===== -->
+<div class="sport-hero-banner" id="sportHeroBanner" style="background:linear-gradient(135deg,#0D0D1A,#1a1a2e);">
+  <div class="sport-hero-inner container">
+    <div class="sport-hero-emoji" id="sportHeroEmoji">🏆</div>
+    <div class="sport-hero-name" id="sportHeroName">Sport</div>
+    <div class="sport-hero-sub" id="sportHeroSub">Latest Sport News</div>
+  </div>
+</div>
+
+<!-- AD: Leaderboard -->
+<div class="ad-wrap">
+  <div class="container">
+    <div class="ad-unit ad-leaderboard" data-ad-size="728×90" data-ad-pos="Sport Page Leaderboard">
+      <span class="ad-label">Advertisement · 728×90 Leaderboard</span>
+    </div>
+  </div>
+</div>
+
+<!-- ===== SEARCH OVERLAY ===== -->
+<div class="search-overlay hidden" id="searchOverlay">
+  <div class="container">
+    <div class="search-header">
+      <h2 id="searchResultsTitle">Search Results</h2>
+      <button class="close-search" id="closeSearch">✕ Close</button>
+    </div>
+    <div class="card-grid-4" id="searchResults"></div>
+  </div>
+</div>
+
+<!-- ===== MAIN LAYOUT ===== -->
+<div class="container">
+  <div class="sport-main-layout">
+
+    <!-- CONTENT -->
+    <main>
+      <div class="sport-articles-grid" id="articlesGrid">
+        <!-- Skeletons -->
+        <div class="skeleton-card" style="height:280px;"></div>
+        <div class="skeleton-card" style="height:280px;"></div>
+        <div class="skeleton-card" style="height:280px;"></div>
+        <div class="skeleton-card" style="height:280px;"></div>
+        <div class="skeleton-card" style="height:280px;"></div>
+        <div class="skeleton-card" style="height:280px;"></div>
+      </div>
+      <div class="load-more-wrap">
+        <button class="load-more-btn" id="loadMoreBtn">Load More Stories</button>
+      </div>
+    </main>
+
+    <!-- SIDEBAR -->
+    <aside class="sport-sidebar">
+
+      <!-- Trending from this sport -->
+      <div class="sidebar-widget">
+        <div class="widget-header" id="sidebarTrendingHeader">🔥 Trending</div>
+        <ol class="trending-list" id="sportTrendingList">
+          <li class="skeleton-list-item"></li>
+          <li class="skeleton-list-item"></li>
+          <li class="skeleton-list-item"></li>
+          <li class="skeleton-list-item"></li>
+          <li class="skeleton-list-item"></li>
+        </ol>
+      </div>
+
+      <!-- AD MPU 1 -->
+      <div class="ad-unit ad-mpu" data-ad-size="300×250" data-ad-pos="Sport Sidebar MPU 1">
+        <span class="ad-label">Advertisement · 300×250 MPU</span>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="sidebar-widget newsletter-widget">
+        <div class="widget-header">📬 Daily Digest</div>
+        <p class="newsletter-text">Get the top sports stories delivered every morning.</p>
+        <form class="newsletter-form" id="newsletterFormSport">
+          <input type="email" placeholder="your@email.com" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+
+      <!-- AD MPU 2 -->
+      <div class="ad-unit ad-mpu" data-ad-size="300×250" data-ad-pos="Sport Sidebar MPU 2">
+        <span class="ad-label">Advertisement · 300×250 MPU</span>
+      </div>
+
+    </aside>
+
+  </div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">⚡SportsKeen</div>
+        <p class="footer-tagline">Your pulse on global sport. Breaking news, deep analysis, live updates.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+          <a href="#" class="social-link" aria-label="Facebook">f</a>
+          <a href="#" class="social-link" aria-label="Instagram">ig</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Sports</h4>
+        <ul>
+          <li><a href="sport.html?sport=Football">⚽ Football</a></li>
+          <li><a href="sport.html?sport=Cricket">🏏 Cricket</a></li>
+          <li><a href="sport.html?sport=F1">🏎️ F1</a></li>
+          <li><a href="sport.html?sport=Tennis">🎾 Tennis</a></li>
+          <li><a href="sport.html?sport=Basketball">🏀 Basketball</a></li>
+          <li><a href="sport.html?sport=Rugby">🏉 Rugby</a></li>
+          <li><a href="sport.html?sport=Golf">⛳ Golf</a></li>
+          <li><a href="sport.html?sport=Athletics">🏃 Athletics</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Advertise</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-newsletter">
+        <h4>Newsletter</h4>
+        <p>Daily sports highlights to your inbox.</p>
+        <form class="newsletter-form footer-nl-form" id="newsletterFormFooter">
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit">Go</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-sources">
+      <p>SportsKeen aggregates and curates news from publicly available RSS feeds and sports media outlets. All original reporting credit belongs to the respective source publications.</p>
+    </div>
+    <div class="ad-unit ad-leaderboard footer-ad" data-ad-size="728×90" data-ad-pos="Footer Leaderboard">
+      <span class="ad-label">Advertisement · 728×90 Footer Leaderboard</span>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 SportsKeen. All rights reserved.</span>
+      <span>Built with ❤️ for sports fans everywhere.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== STICKY BOTTOM AD ===== -->
+<div class="sticky-bottom-ad hidden" id="stickyBottomAd">
+  <button class="sticky-ad-close" id="stickyAdClose" aria-label="Close ad">✕</button>
+  <div class="ad-unit ad-leaderboard" data-ad-size="728×90" data-ad-pos="Sticky Bottom">
+    <span class="ad-label">Advertisement · 728×90 Sticky Bottom</span>
+  </div>
+</div>
+
+<!-- ===== SCROLL TO TOP ===== -->
+<button class="scroll-top-btn hidden" id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+
+<!-- ===== TOAST ===== -->
+<div class="toast hidden" id="toastEl"></div>
+
+<script>
+/* ── Sport page inline script ── */
+(function() {
+  const API = '/api';
+  const SPORTS = ['Football','Cricket','F1','Tennis','Basketball','Rugby','Golf','Athletics'];
+  const EMOJI = {Football:'⚽',Cricket:'🏏',F1:'🏎️',Tennis:'🎾',Basketball:'🏀',Rugby:'🏉',Golf:'⛳',Athletics:'🏃'};
+  const GRAD = {
+    Football:['#064E3B','#16A34A'], Cricket:['#78350F','#D97706'], F1:['#7F1D1D','#DC2626'],
+    Tennis:['#3B0764','#7C3AED'], Basketball:['#7C2D12','#EA580C'], Rugby:['#0C4A6E','#0284C7'],
+    Golf:['#1A2E05','#65A30D'], Athletics:['#4A044E','#A21CAF']
+  };
+
+  const params = new URLSearchParams(window.location.search);
+  const sport = params.get('sport') || 'Football';
+  const em = EMOJI[sport] || '🏆';
+  const grad = GRAD[sport] || ['#0D0D1A','#1a1a2e'];
+
+  let allArticles = [];
+  let currentPage = 1;
+  const PAGE_SIZE = 40;
+  let totalPages = 1;
+
+  // ── Helpers ──
+
+  function esc(str) {
+    return String(str||'')
+      .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  function timeAgo(dateStr) {
+    if (!dateStr) return '';
+    const d = new Date(dateStr);
+    if (isNaN(d)) return '';
+    const diff = (Date.now() - d.getTime()) / 1000;
+    if (diff < 60) return 'Just now';
+    if (diff < 3600) return Math.floor(diff/60) + 'm ago';
+    if (diff < 86400) return Math.floor(diff/3600) + 'h ago';
+    if (diff < 604800) return Math.floor(diff/86400) + 'd ago';
+    return d.toLocaleDateString('en-GB',{day:'numeric',month:'short'});
+  }
+
+  function placeholder(s) {
+    const g = GRAD[s] || ['#2D3748','#4A5568'];
+    return `https://via.placeholder.com/600x400/${g[0].replace('#','')}/ffffff?text=${encodeURIComponent((EMOJI[s]||'🏆')+' '+s)}`;
+  }
+
+  function imgOrPlaceholder(a) { return a.image || placeholder(a.category || sport); }
+
+  function sportClass(s) { return (s||'').toLowerCase().replace(/[^a-z]/g,''); }
+
+  function showToast(msg) {
+    const t = document.getElementById('toastEl');
+    if (!t) return;
+    t.textContent = msg;
+    t.classList.remove('hidden');
+    clearTimeout(t._timer);
+    t._timer = setTimeout(() => t.classList.add('hidden'), 3000);
+  }
+
+  function openArticle(article) {
+    try {
+      sessionStorage.setItem('sk_article', JSON.stringify(article));
+      sessionStorage.setItem('sk_allArticles', JSON.stringify(allArticles));
+    } catch(e) {}
+    window.location.href = 'article.html';
+  }
+
+  // ── Card builders ──
+
+  function makeGridCard(a) {
+    const div = document.createElement('div');
+    div.className = 'grid-card';
+    const s = a.category || sport;
+    div.innerHTML = `
+      <div class="gc-img-wrap">
+        <img class="gc-img" src="${esc(imgOrPlaceholder(a))}" alt="${esc(a.title)}" loading="lazy" onerror="this.src='${placeholder(s)}'" />
+        <span class="sport-badge badge-${esc(s)}">${esc(EMOJI[s]||'')} ${esc(s)}</span>
+      </div>
+      <div class="gc-body">
+        <div class="gc-title">${esc(a.title)}</div>
+        <div class="gc-meta">${esc(a.source||'SportsKeen')} · ${timeAgo(a.pubDate)}</div>
+        ${a.summary ? `<div class="gc-summary">${esc(a.summary)}</div>` : ''}
+      </div>`;
+    div.addEventListener('click', () => openArticle(a));
+    return div;
+  }
+
+  // ── Ticker ──
+
+  function renderTicker(articles) {
+    const track = document.getElementById('tickerTrack');
+    if (!track || !articles.length) return;
+    const inner = document.createElement('div');
+    inner.className = 'ticker-inner';
+    const items = articles.slice(0,20);
+    [items,items].forEach(arr => {
+      arr.forEach(a => {
+        const span = document.createElement('span');
+        span.className = 'ticker-item';
+        span.textContent = a.title;
+        span.addEventListener('click', () => openArticle(a));
+        inner.appendChild(span);
+        const sep = document.createElement('span');
+        sep.className = 'ticker-sep';
+        sep.textContent = '•';
+        inner.appendChild(sep);
+      });
+    });
+    track.innerHTML = '';
+    track.appendChild(inner);
+  }
+
+  // ── Trending bar ──
+
+  function renderTrendingBar(articles) {
+    const bar = document.getElementById('trendingBar');
+    if (!bar) return;
+    bar.innerHTML = '';
+    articles.slice(0,8).forEach(a => {
+      const s = a.category || sport;
+      const btn = document.createElement('button');
+      btn.className = `trend-pill sport-${sportClass(s)}`;
+      btn.textContent = `${EMOJI[s]||''} ${a.title.length>40?a.title.slice(0,37)+'…':a.title}`;
+      btn.addEventListener('click', () => openArticle(a));
+      bar.appendChild(btn);
+    });
+  }
+
+  // ── Sidebar trending ──
+
+  function renderSidebarTrending(articles) {
+    const list = document.getElementById('sportTrendingList');
+    if (!list) return;
+    list.innerHTML = '';
+    articles.slice(0,8).forEach(a => {
+      const li = document.createElement('li');
+      li.textContent = a.title;
+      li.addEventListener('click', () => openArticle(a));
+      list.appendChild(li);
+    });
+    const header = document.getElementById('sidebarTrendingHeader');
+    if (header) header.textContent = `🔥 Trending ${em} ${sport}`;
+  }
+
+  // ── Articles grid ──
+
+  function renderArticles(articles, append) {
+    const grid = document.getElementById('articlesGrid');
+    if (!grid) return;
+    if (!append) grid.innerHTML = '';
+    if (!articles || !articles.length) {
+      if (!append) {
+        grid.innerHTML = '<p style="grid-column:1/-1;color:var(--text-muted);padding:40px 0;text-align:center;font-size:15px;">No articles found for this sport yet.</p>';
+      }
+      return;
+    }
+    articles.forEach(a => grid.appendChild(makeGridCard(a)));
+  }
+
+  // ── Fetch ──
+
+  async function fetchPage(page) {
+    try {
+      const url = `${API}/news?category=${encodeURIComponent(sport)}&limit=${PAGE_SIZE}&page=${page}`;
+      const res = await fetch(url);
+      if (!res.ok) throw new Error('API ' + res.status);
+      return await res.json();
+    } catch(e) {
+      console.warn('fetch error', e);
+      return { articles: [], total: 0, totalPages: 1 };
+    }
+  }
+
+  // ── Load more ──
+
+  async function loadMore() {
+    const btn = document.getElementById('loadMoreBtn');
+    if (btn) { btn.disabled = true; btn.textContent = 'Loading…'; }
+    currentPage++;
+    const data = await fetchPage(currentPage);
+    const newArticles = data.articles || [];
+    allArticles = allArticles.concat(newArticles);
+    renderArticles(newArticles, true);
+    if (btn) {
+      btn.disabled = false;
+      btn.textContent = 'Load More Stories';
+      if (currentPage >= totalPages || newArticles.length === 0) {
+        btn.textContent = 'No More Stories';
+        btn.disabled = true;
+      }
+    }
+  }
+
+  // ── Search ──
+
+  let searchTimer = null;
+
+  function setupSearch() {
+    const input = document.getElementById('searchInput');
+    const btn = document.getElementById('searchBtn');
+    const overlay = document.getElementById('searchOverlay');
+    const resultsEl = document.getElementById('searchResults');
+    const titleEl = document.getElementById('searchResultsTitle');
+    const closeBtn = document.getElementById('closeSearch');
+    if (!input) return;
+
+    function doSearch(q) {
+      if (!q || q.length < 2) { if (overlay) overlay.classList.add('hidden'); return; }
+      const ql = q.toLowerCase();
+      const hits = allArticles.filter(a =>
+        (a.title||'').toLowerCase().includes(ql) ||
+        (a.summary||'').toLowerCase().includes(ql)
+      ).slice(0, 20);
+      if (titleEl) titleEl.textContent = `Search Results for "${q}" (${hits.length})`;
+      if (resultsEl) {
+        resultsEl.innerHTML = '';
+        if (!hits.length) {
+          resultsEl.innerHTML = '<p style="grid-column:1/-1;color:var(--text-muted);padding:20px 0;">No results found.</p>';
+        } else {
+          hits.forEach(a => resultsEl.appendChild(makeGridCard(a)));
+        }
+      }
+      if (overlay) overlay.classList.remove('hidden');
+    }
+
+    input.addEventListener('input', () => {
+      clearTimeout(searchTimer);
+      searchTimer = setTimeout(() => doSearch(input.value.trim()), 320);
+    });
+    if (btn) btn.addEventListener('click', () => doSearch(input.value.trim()));
+    input.addEventListener('keydown', e => {
+      if (e.key === 'Enter') doSearch(input.value.trim());
+      if (e.key === 'Escape') { if (overlay) overlay.classList.add('hidden'); input.value = ''; }
+    });
+    if (closeBtn) closeBtn.addEventListener('click', () => { if (overlay) overlay.classList.add('hidden'); input.value = ''; });
+  }
+
+  // ── Sticky ad ──
+
+  function setupStickyAd() {
+    const ad = document.getElementById('stickyBottomAd');
+    const close = document.getElementById('stickyAdClose');
+    if (!ad) return;
+    setTimeout(() => ad.classList.remove('hidden'), 5000);
+    if (close) close.addEventListener('click', () => ad.classList.add('hidden'));
+  }
+
+  // ── Scroll top ──
+
+  function setupScrollTop() {
+    const btn = document.getElementById('scrollTopBtn');
+    if (!btn) return;
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 600) btn.classList.remove('hidden');
+      else btn.classList.add('hidden');
+    });
+    btn.addEventListener('click', () => window.scrollTo({top:0,behavior:'smooth'}));
+  }
+
+  // ── Newsletter ──
+
+  function setupNewsletterForms() {
+    ['newsletterFormSport','newsletterFormFooter'].forEach(id => {
+      const form = document.getElementById(id);
+      if (!form) return;
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        const email = form.querySelector('input[type="email"]').value;
+        if (email) { showToast(`✅ Subscribed! Check ${email}`); form.reset(); }
+      });
+    });
+  }
+
+  // ── Refresh ──
+
+  function setupRefresh() {
+    const btn = document.getElementById('refreshBtn');
+    if (!btn) return;
+    btn.addEventListener('click', async () => {
+      btn.disabled = true;
+      showToast('Refreshing…');
+      currentPage = 1;
+      await init();
+      btn.disabled = false;
+      showToast('Updated!');
+    });
+  }
+
+  // ── Nav active state ──
+
+  function setActiveNav() {
+    document.querySelectorAll('.nav-pill').forEach(pill => {
+      pill.classList.remove('active');
+      if (pill.dataset.sport === sport) pill.classList.add('active');
+    });
+  }
+
+  // ── Apply sport branding ──
+
+  function applyBranding() {
+    document.title = `${em} ${sport} News — SportsKeen`;
+    const desc = document.getElementById('pageDesc');
+    if (desc) desc.content = `Latest ${sport} news on SportsKeen.`;
+
+    const banner = document.getElementById('sportHeroBanner');
+    if (banner) banner.style.background = `linear-gradient(135deg, ${grad[0]}, ${grad[1]})`;
+
+    const emojiEl = document.getElementById('sportHeroEmoji');
+    if (emojiEl) emojiEl.textContent = em;
+
+    const nameEl = document.getElementById('sportHeroName');
+    if (nameEl) nameEl.textContent = sport;
+
+    const subEl = document.getElementById('sportHeroSub');
+    if (subEl) subEl.textContent = `Latest ${sport} News`;
+  }
+
+  // ── Init ──
+
+  async function init() {
+    applyBranding();
+    setActiveNav();
+
+    const data = await fetchPage(1);
+    allArticles = data.articles || [];
+    totalPages = data.totalPages || 1;
+
+    renderTicker(allArticles);
+    renderTrendingBar(allArticles);
+    renderArticles(allArticles, false);
+    renderSidebarTrending(allArticles);
+
+    const btn = document.getElementById('loadMoreBtn');
+    if (btn) {
+      btn.addEventListener('click', loadMore);
+      if (totalPages <= 1 || allArticles.length === 0) {
+        btn.textContent = 'No More Stories';
+        btn.disabled = true;
+      }
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    setupSearch();
+    setupStickyAd();
+    setupScrollTop();
+    setupNewsletterForms();
+    setupRefresh();
+    init();
+  });
+})();
+</script>
+<div class="cookie-banner" id="cookieBanner">
+  <div class="cookie-text">We use cookies to improve your experience and to serve personalised advertising via Google AdSense and analytics tools. By clicking "Accept", you consent to our use of cookies. See our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Use</a> for details.</div>
+  <div class="cookie-actions">
+    <button class="cookie-btn-decline" id="cookieDecline">Decline</button>
+    <button class="cookie-btn-accept" id="cookieAccept">Accept All Cookies</button>
+  </div>
+</div>
+<script>(function(){var b=document.getElementById('cookieBanner'),c=localStorage.getItem('sk_cookie_consent');if(c){b.classList.add('hidden');return;}document.getElementById('cookieAccept').addEventListener('click',function(){localStorage.setItem('sk_cookie_consent','accepted');b.classList.add('hidden');});document.getElementById('cookieDecline').addEventListener('click',function(){localStorage.setItem('sk_cookie_consent','declined');b.classList.add('hidden');});})();</script>
+</body>
+</html>

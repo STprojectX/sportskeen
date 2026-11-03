@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — SportsKeen</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 8px; }
+    .contact-form-wrap { background: var(--surface); border-radius: var(--radius-lg); padding: 32px; border: 1px solid var(--border-light); box-shadow: var(--shadow-md); }
+    .form-group { margin-bottom: 18px; }
+    .form-group label { display: block; font-size: .8rem; font-weight: 700; color: var(--text-secondary); margin-bottom: 6px; text-transform: uppercase; letter-spacing: .4px; }
+    .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 10px 14px; border: 1.5px solid var(--border); border-radius: var(--radius); font-family: var(--font); font-size: .88rem; color: var(--text-primary); outline: none; transition: border-color .2s; }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--brand-red); }
+    .form-group textarea { resize: vertical; min-height: 120px; }
+    .submit-btn { width: 100%; padding: 12px; background: var(--brand-red); color: white; border: none; border-radius: var(--radius); font-family: var(--font); font-size: .9rem; font-weight: 700; cursor: pointer; transition: background .2s; }
+    .submit-btn:hover { background: var(--brand-red-dark); }
+    .contact-info { display: flex; flex-direction: column; gap: 20px; }
+    .info-card { background: var(--surface); border-radius: var(--radius); padding: 20px; border: 1px solid var(--border-light); }
+    .info-card h3 { font-size: .9rem; font-weight: 700; margin-bottom: 6px; }
+    .info-card p { font-size: .82rem; color: var(--text-secondary); line-height: 1.6; }
+    @media(max-width:768px){ .contact-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+<div class="ticker-wrap"><div class="ticker-label">⚡ SPORTSKEEN</div><div class="ticker-track"><span class="ticker-loading">Get in touch</span></div></div>
+<header class="header">
+  <div class="header-top"><div class="container header-top-inner">
+    <a href="index.html" class="site-logo" style="display:flex;align-items:center;text-decoration:none;">
+      <div class="logo-wordmark"><span class="lw-sports">SPORTS</span><span class="lw-keen">KEEN</span></div>
+      <div class="logo-divider"></div>
+      <div class="logo-tagline"><span>Breaking</span><span>Sports</span><span>News</span></div>
+    </a>
+    <div style="flex:1"></div>
+    <div class="header-actions"><a href="index.html" style="color:rgba(255,255,255,.6);font-size:.82rem;font-weight:600;">← Back to Home</a></div>
+  </div></div>
+  <nav class="header-nav"><div class="container nav-inner">
+    <a href="index.html" class="nav-link" style="color:rgba(255,255,255,.7)">Home</a>
+    <a href="about.html" class="nav-link" style="color:rgba(255,255,255,.7)">About</a>
+    <a href="contact.html" class="nav-link" style="color:white">Contact</a>
+    <a href="privacy.html" class="nav-link" style="color:rgba(255,255,255,.7)">Privacy</a>
+  </div></nav>
+</header>
+<div class="page-hero"><div class="container"><h1>Contact SportsKeen</h1><p>Got a tip, a question, or want to work with us? We'd love to hear from you.</p></div></div>
+<div class="page-content" style="max-width:900px">
+  <div class="contact-grid">
+    <div class="contact-form-wrap">
+      <h2 style="margin-top:0;margin-bottom:20px;font-size:1.1rem">Send us a message</h2>
+      <form id="contactForm">
+        <div class="form-group"><label>Your Name</label><input type="text" placeholder="John Smith" required /></div>
+        <div class="form-group"><label>Email Address</label><input type="email" placeholder="john@example.com" required /></div>
+        <div class="form-group">
+          <label>Subject</label>
+          <select>
+            <option>Editorial Enquiry</option>
+            <option>Advertising & Partnerships</option>
+            <option>Copyright / Content Issue</option>
+            <option>Technical Issue</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group"><label>Message</label><textarea placeholder="Tell us what's on your mind…" required></textarea></div>
+        <button type="submit" class="submit-btn">Send Message →</button>
+      </form>
+    </div>
+    <div class="contact-info">
+      <div class="info-card">
+        <h3>📝 Editorial</h3>
+        <p>Have a sports story tip or want to contribute? We're always looking for sharp sports writers who fit the SportsKeen voice.</p>
+      </div>
+      <div class="info-card">
+        <h3>📢 Advertising</h3>
+        <p>Interested in reaching our sports-passionate audience? We offer display advertising, sponsorship and native content opportunities.</p>
+      </div>
+      <div class="info-card">
+        <h3>⚖️ Copyright</h3>
+        <p>If you believe any content on SportsKeen infringes your copyright, please contact us and we will respond within 48 hours.</p>
+      </div>
+      <div class="info-card">
+        <h3>🌍 Based Online</h3>
+        <p>SportsKeen is a digital-first sports media brand serving a global audience of sports fans.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <span>© 2026 SportsKeen. All rights reserved.</span>
+      <span><a href="privacy.html" style="color:rgba(255,255,255,.5)">Privacy Policy</a></span>
+    </div>
+  </div>
+</footer>
+<div class="cookie-banner" id="cookieBanner">
+  <div class="cookie-text">We use cookies to improve your experience and to serve personalised advertising via Google AdSense and analytics tools. By clicking "Accept", you consent to our use of cookies. See our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Use</a> for details.</div>
+  <div class="cookie-actions">
+    <button class="cookie-btn-decline" id="cookieDecline">Decline</button>
+    <button class="cookie-btn-accept" id="cookieAccept">Accept All Cookies</button>
+  </div>
+</div>
+<script>(function(){var b=document.getElementById('cookieBanner'),c=localStorage.getItem('sk_cookie_consent');if(c){b.classList.add('hidden');return;}document.getElementById('cookieAccept').addEventListener('click',function(){localStorage.setItem('sk_cookie_consent','accepted');b.classList.add('hidden');});document.getElementById('cookieDecline').addEventListener('click',function(){localStorage.setItem('sk_cookie_consent','declined');b.classList.add('hidden');});})();</script>
+<script>
+  document.getElementById('contactForm').addEventListener('submit', e => {
+    e.preventDefault();
+    e.target.innerHTML = '<div style="text-align:center;padding:40px 0"><div style="font-size:2.5rem;margin-bottom:12px">✅</div><h3 style="font-size:1.1rem;margin-bottom:8px">Message sent!</h3><p style="color:var(--text-secondary);font-size:.88rem">We\'ll get back to you within 48 hours.</p></div>';
+  });
+</script>
+</body>
+</html>

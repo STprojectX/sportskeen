@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About SportsKeen</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Playfair+Display:wght@700&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="ticker-wrap"><div class="ticker-label">⚡ SPORTSKEEN</div><div class="ticker-track"><span class="ticker-loading">Sharp. Analytical. Fun.</span></div></div>
+<header class="header">
+  <div class="header-top"><div class="container header-top-inner">
+    <a href="index.html" class="site-logo" style="display:flex;align-items:center;text-decoration:none;">
+      <div class="logo-wordmark"><span class="lw-sports">SPORTS</span><span class="lw-keen">KEEN</span></div>
+      <div class="logo-divider"></div>
+      <div class="logo-tagline"><span>Breaking</span><span>Sports</span><span>News</span></div>
+    </a>
+    <div style="flex:1"></div>
+    <div class="header-actions"><a href="index.html" style="color:rgba(255,255,255,.6);font-size:.82rem;font-weight:600;">← Back to Home</a></div>
+  </div></div>
+  <nav class="header-nav"><div class="container nav-inner">
+    <a href="index.html" class="nav-link" style="color:rgba(255,255,255,.7)">Home</a>
+    <a href="about.html" class="nav-link" style="color:white;border-bottom:3px solid var(--brand-red)">About</a>
+    <a href="contact.html" class="nav-link" style="color:rgba(255,255,255,.7)">Contact</a>
+    <a href="privacy.html" class="nav-link" style="color:rgba(255,255,255,.7)">Privacy</a>
+  </div></nav>
+</header>
+<div class="page-hero"><div class="container"><h1>About SportsKeen</h1><p>The sports site for fans who actually want to think about sport.</p></div></div>
+<div class="page-content">
+  <h2>Who We Are</h2>
+  <p>SportsKeen is a digital sports media platform dedicated to covering every major sport with sharp analysis, honest opinions and genuinely entertaining writing. We believe sports journalism shouldn't be boring — and neither should the fans who read it.</p>
+  <p>We cover football, cricket, Formula 1, tennis, basketball, rugby, golf, athletics and every sport that matters. Our approach is simple: be analytical without being dull, be opinionated without being reckless, and always treat the reader as someone who actually knows their sport.</p>
+
+  <h2>Our Editorial Philosophy</h2>
+  <p>SportsKeen curates and editorially rewrites sports news from the world's leading sports media organisations including BBC Sport, ESPN, Sky Sports, ESPNcricinfo, Autosport, Goal.com and more. Every article you read on SportsKeen has been reviewed and rewritten in our editorial voice — we don't just republish; we add perspective.</p>
+  <ul>
+    <li><strong>Sharp:</strong> We cut through the noise and get to what actually matters.</li>
+    <li><strong>Analytical:</strong> We explain the why, not just the what.</li>
+    <li><strong>Fun:</strong> Sport is entertainment. We write like it is.</li>
+    <li><strong>Fair:</strong> We call things as we see them, regardless of team or nationality.</li>
+  </ul>
+
+  <h2>Content & Sources</h2>
+  <p>All news content on SportsKeen is aggregated from publicly available RSS feeds provided by leading sports media organisations. Headlines and summaries are editorially curated. All original content, article pages, and full reports link back to the original source publisher.</p>
+  <p>SportsKeen does not claim ownership of third-party news content. We respect the intellectual property of all source publishers.</p>
+
+  <h2>Advertising</h2>
+  <p>SportsKeen is supported by advertising. We work with leading advertising partners to deliver relevant ads to our audience. All advertising is clearly labelled. We do not allow advertising that misleads readers or compromises our editorial independence.</p>
+
+  <h2>Contact</h2>
+  <p>For editorial enquiries, advertising, or any other questions, please visit our <a href="contact.html" style="color:var(--brand-red);font-weight:600;">Contact page</a>.</p>
+</div>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <span>© 2026 SportsKeen. All rights reserved.</span>
+      <span><a href="privacy.html" style="color:rgba(255,255,255,.5)">Privacy Policy</a> · <a href="terms.html" style="color:rgba(255,255,255,.5)">Terms</a></span>
+    </div>
+  </div>
+</footer>
+<div class="cookie-banner" id="cookieBanner">
+  <div class="cookie-text">We use cookies to improve your experience and to serve personalised advertising via Google AdSense and analytics tools. By clicking "Accept", you consent to our use of cookies. See our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Use</a> for details.</div>
+  <div class="cookie-actions">
+    <button class="cookie-btn-decline" id="cookieDecline">Decline</button>
+    <button class="cookie-btn-accept" id="cookieAccept">Accept All Cookies</button>
+  </div>
+</div>
+<script>(function(){var b=document.getElementById('cookieBanner'),c=localStorage.getItem('sk_cookie_consent');if(c){b.classList.add('hidden');return;}document.getElementById('cookieAccept').addEventListener('click',function(){localStorage.setItem('sk_cookie_consent','accepted');b.classList.add('hidden');});document.getElementById('cookieDecline').addEventListener('click',function(){localStorage.setItem('sk_cookie_consent','declined');b.classList.add('hidden');});})();</script>
+</body>
+</html>

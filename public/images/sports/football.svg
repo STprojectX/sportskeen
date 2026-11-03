@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a2a0a"/>
+      <stop offset="100%" style="stop-color:#1a4d1a"/>
+    </linearGradient>
+    <radialGradient id="spotlight" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" style="stop-color:#4a8a4a;stop-opacity:0.4"/>
+      <stop offset="100%" style="stop-color:#0a2a0a;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="600" fill="url(#bg)"/>
+  <rect width="1200" height="600" fill="url(#spotlight)"/>
+  <!-- Grass stripes -->
+  <rect x="0" y="0" width="120" height="600" fill="#1e5c1e" opacity="0.5"/>
+  <rect x="240" y="0" width="120" height="600" fill="#1e5c1e" opacity="0.5"/>
+  <rect x="480" y="0" width="120" height="600" fill="#1e5c1e" opacity="0.5"/>
+  <rect x="720" y="0" width="120" height="600" fill="#1e5c1e" opacity="0.5"/>
+  <rect x="960" y="0" width="120" height="600" fill="#1e5c1e" opacity="0.5"/>
+  <!-- Pitch markings (white lines) -->
+  <!-- Outer boundary -->
+  <rect x="60" y="40" width="1080" height="520" fill="none" stroke="white" stroke-width="3" opacity="0.5"/>
+  <!-- Centre circle -->
+  <circle cx="600" cy="300" r="100" fill="none" stroke="white" stroke-width="3" opacity="0.5"/>
+  <!-- Centre spot -->
+  <circle cx="600" cy="300" r="6" fill="white" opacity="0.5"/>
+  <!-- Halfway line -->
+  <line x1="600" y1="40" x2="600" y2="560" stroke="white" stroke-width="3" opacity="0.5"/>
+  <!-- Left penalty area -->
+  <rect x="60" y="160" width="200" height="280" fill="none" stroke="white" stroke-width="3" opacity="0.5"/>
+  <!-- Left 6-yard box -->
+  <rect x="60" y="230" width="80" height="140" fill="none" stroke="white" stroke-width="3" opacity="0.5"/>
+  <!-- Left penalty spot -->
+  <circle cx="185" cy="300" r="5" fill="white" opacity="0.5"/>
+  <!-- Right penalty area -->
+  <rect x="940" y="160" width="200" height="280" fill="none" stroke="white" stroke-width="3" opacity="0.5"/>
+  <!-- Right 6-yard box -->
+  <rect x="1060" y="230" width="80" height="140" fill="none" stroke="white" stroke-width="3" opacity="0.5"/>
+  <!-- Right penalty spot -->
+  <circle cx="1015" cy="300" r="5" fill="white" opacity="0.5"/>
+  <!-- Left goal -->
+  <rect x="20" y="250" width="40" height="100" fill="none" stroke="white" stroke-width="3" opacity="0.7"/>
+  <!-- Right goal -->
+  <rect x="1140" y="250" width="40" height="100" fill="none" stroke="white" stroke-width="3" opacity="0.7"/>
+  <!-- Football (centre) -->
+  <circle cx="600" cy="300" r="45" fill="white"/>
+  <path d="M600 255 L615 275 L608 298 L592 298 L585 275 Z" fill="#222"/>
+  <path d="M600 345 L615 325 L625 310 L610 303 L590 303 L575 310 L585 325 Z" fill="#222"/>
+  <path d="M555 275 L570 275 L578 298 L560 310 L545 295 Z" fill="#222"/>
+  <path d="M645 275 L630 275 L622 298 L640 310 L655 295 Z" fill="#222"/>
+  <circle cx="600" cy="300" r="45" fill="none" stroke="#ddd" stroke-width="1.5"/>
+</svg>

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0a3a"/>
+      <stop offset="100%" style="stop-color:#2a1a5a"/>
+    </linearGradient>
+    <linearGradient id="track" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#cc4400"/>
+      <stop offset="100%" style="stop-color:#aa3300"/>
+    </linearGradient>
+    <linearGradient id="infield" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2a7a2a"/>
+      <stop offset="100%" style="stop-color:#1a5a1a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="600" fill="url(#bg)"/>
+  <!-- Running track oval (outer) -->
+  <ellipse cx="600" cy="310" rx="490" ry="250" fill="url(#track)"/>
+  <!-- Infield green -->
+  <ellipse cx="600" cy="310" rx="380" ry="175" fill="url(#infield)"/>
+  <!-- Track lane lines -->
+  <ellipse cx="600" cy="310" rx="490" ry="250" fill="none" stroke="white" stroke-width="2.5" opacity="0.7"/>
+  <ellipse cx="600" cy="310" rx="455" ry="222" fill="none" stroke="white" stroke-width="2" opacity="0.5"/>
+  <ellipse cx="600" cy="310" rx="420" ry="197" fill="none" stroke="white" stroke-width="2" opacity="0.5"/>
+  <ellipse cx="600" cy="310" rx="385" ry="176" fill="none" stroke="white" stroke-width="2" opacity="0.5"/>
+  <!-- Start/Finish straight markers -->
+  <line x1="600" y1="58" x2="600" y2="85" stroke="white" stroke-width="4" opacity="0.9"/>
+  <line x1="600" y1="535" x2="600" y2="562" stroke="white" stroke-width="4" opacity="0.9"/>
+  <!-- Finish line tape -->
+  <line x1="600" y1="58" x2="600" y2="562" stroke="white" stroke-width="2" opacity="0.3" stroke-dasharray="8,6"/>
+  <!-- Staggered start lines -->
+  <line x1="560" y1="62" x2="560" y2="88" stroke="white" stroke-width="3" opacity="0.6"/>
+  <line x1="520" y1="68" x2="520" y2="94" stroke="white" stroke-width="3" opacity="0.6"/>
+  <line x1="480" y1="77" x2="480" y2="103" stroke="white" stroke-width="3" opacity="0.6"/>
+  <line x1="440" y1="92" x2="440" y2="118" stroke="white" stroke-width="3" opacity="0.6"/>
+  <!-- Hurdle silhouette (middle of back straight) -->
+  <rect x="790" y="93" width="4" height="40" fill="white" opacity="0.8"/>
+  <rect x="850" y="93" width="4" height="40" fill="white" opacity="0.8"/>
+  <rect x="788" y="91" width="68" height="5" fill="white" opacity="0.8"/>
+  <!-- Runner silhouette (lead runner) -->
+  <!-- Body -->
+  <ellipse cx="680" cy="88" rx="10" ry="14" fill="#ffcc88"/>
+  <!-- Head -->
+  <circle cx="680" cy="70" r="11" fill="#ffcc88"/>
+  <!-- Torso/vest -->
+  <path d="M 670 90 L 690 90 L 695 115 L 665 115 Z" fill="#cc0033"/>
+  <!-- Arms running position -->
+  <line x1="665" y1="95" x2="650" y2="110" stroke="#ffcc88" stroke-width="5" stroke-linecap="round"/>
+  <line x1="695" y1="95" x2="710" y2="80" stroke="#ffcc88" stroke-width="5" stroke-linecap="round"/>
+  <!-- Legs mid-stride -->
+  <line x1="670" y1="115" x2="655" y2="145" stroke="#222266" stroke-width="6" stroke-linecap="round"/>
+  <line x1="690" y1="115" x2="705" y2="140" stroke="#222266" stroke-width="6" stroke-linecap="round"/>
+  <!-- Shoes -->
+  <ellipse cx="652" cy="148" rx="10" ry="5" fill="#ffdd00"/>
+  <ellipse cx="707" cy="143" rx="10" ry="5" fill="#ffdd00"/>
+  <!-- Lane number circles -->
+  <circle cx="750" cy="430" r="18" fill="white" opacity="0.15"/>
+  <circle cx="750" cy="390" r="18" fill="white" opacity="0.15"/>
+  <circle cx="750" cy="350" r="18" fill="white" opacity="0.15"/>
+  <circle cx="750" cy="310" r="18" fill="white" opacity="0.15"/>
+</svg>

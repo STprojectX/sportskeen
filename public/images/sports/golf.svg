@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a4a7a"/>
+      <stop offset="60%" style="stop-color:#2a6a9a"/>
+      <stop offset="100%" style="stop-color:#3a8a5a"/>
+    </linearGradient>
+    <linearGradient id="fairway" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2a7a2a"/>
+      <stop offset="100%" style="stop-color:#1a5a1a"/>
+    </linearGradient>
+    <linearGradient id="rough" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a5a1a"/>
+      <stop offset="100%" style="stop-color:#0d3a0d"/>
+    </linearGradient>
+    <radialGradient id="green" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#22cc44"/>
+      <stop offset="100%" style="stop-color:#1a9933"/>
+    </radialGradient>
+    <radialGradient id="bunker" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#e8d090"/>
+      <stop offset="100%" style="stop-color:#c8b060"/>
+    </radialGradient>
+  </defs>
+  <!-- Sky -->
+  <rect width="1200" height="600" fill="url(#sky)"/>
+  <!-- Clouds -->
+  <ellipse cx="200" cy="100" rx="90" ry="35" fill="white" opacity="0.25"/>
+  <ellipse cx="260" cy="85" rx="70" ry="30" fill="white" opacity="0.2"/>
+  <ellipse cx="900" cy="120" rx="80" ry="30" fill="white" opacity="0.2"/>
+  <ellipse cx="960" cy="105" rx="60" ry="25" fill="white" opacity="0.15"/>
+  <!-- Rough (background) -->
+  <rect x="0" y="300" width="1200" height="300" fill="url(#rough)"/>
+  <!-- Fairway curve -->
+  <path d="M 0 420 Q 300 350 600 380 Q 900 410 1200 360 L 1200 600 L 0 600 Z" fill="url(#fairway)"/>
+  <!-- Green (putting surface) -->
+  <ellipse cx="850" cy="380" rx="180" ry="100" fill="url(#green)"/>
+  <!-- Bunker -->
+  <ellipse cx="680" cy="420" rx="80" ry="40" fill="url(#bunker)"/>
+  <ellipse cx="1010" cy="400" rx="65" ry="35" fill="url(#bunker)"/>
+  <!-- Hole -->
+  <ellipse cx="870" cy="368" rx="12" ry="8" fill="#111" opacity="0.9"/>
+  <!-- Flag pole -->
+  <line x1="882" y1="250" x2="882" y2="370" stroke="#888" stroke-width="3"/>
+  <!-- Flag -->
+  <polygon points="882,250 950,275 882,300" fill="#ff0000"/>
+  <!-- Golf ball -->
+  <circle cx="400" cy="385" r="18" fill="white"/>
+  <circle cx="400" cy="385" r="18" fill="none" stroke="#ddd" stroke-width="1"/>
+  <!-- Dimple pattern -->
+  <circle cx="393" cy="379" r="2.5" fill="#e8e8e8"/>
+  <circle cx="407" cy="379" r="2.5" fill="#e8e8e8"/>
+  <circle cx="400" cy="390" r="2.5" fill="#e8e8e8"/>
+  <circle cx="393" cy="391" r="2.5" fill="#e8e8e8"/>
+  <circle cx="407" cy="391" r="2.5" fill="#e8e8e8"/>
+  <!-- Trees (silhouettes) -->
+  <ellipse cx="100" cy="310" rx="55" ry="70" fill="#0a3a0a" opacity="0.8"/>
+  <ellipse cx="150" cy="290" rx="45" ry="60" fill="#0d4a0d" opacity="0.8"/>
+  <ellipse cx="1100" cy="320" rx="55" ry="65" fill="#0a3a0a" opacity="0.8"/>
+  <ellipse cx="1060" cy="300" rx="40" ry="55" fill="#0d4a0d" opacity="0.8"/>
+</svg>
