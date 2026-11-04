@@ -232,7 +232,8 @@ app.get('/api/news', async (req, res) => {
     // Always inject latest originals on top (disk read is fast, ensures instant publish)
     const originals = loadOriginalArticles();
     const rss = articles.filter(a => !a.original);
-    articles = [...originals, ...rss].sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
+    // Pin originals at the top, RSS sorted by date below
+    articles = [...originals, ...rss.sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate))];
 
     if (category && category !== 'All') {
       articles = articles.filter(a => a.category === category);
