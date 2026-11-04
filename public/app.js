@@ -203,6 +203,19 @@ function makeGridCard(article, allArticles) {
 
 // ── Section renderers ─────────────────────────────────────
 
+function renderOriginals(articles) {
+  const grid = document.getElementById('originalsGrid');
+  const section = document.getElementById('originalsSection');
+  if (!grid) return;
+  const originals = articles.filter(a => a.original);
+  if (!originals.length) {
+    if (section) section.style.display = 'none';
+    return;
+  }
+  grid.innerHTML = '';
+  originals.forEach(a => grid.appendChild(makeGridCard(a, articles)));
+}
+
 function renderTicker(articles) {
   const track = document.getElementById('tickerTrack');
   if (!track || !articles.length) return;
@@ -462,6 +475,9 @@ async function init() {
 
   // Hero (first 3 articles overall — best variety)
   renderHero(allArticles.slice(0, 3));
+
+  // SportsKeen Originals section
+  renderOriginals(allArticles);
 
   // Football section
   renderHomeSection('Football', bySport['Football'], 'footballSection', 1, 4);

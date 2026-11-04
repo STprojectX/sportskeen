@@ -1781,3 +1781,48 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 /* ─── UTILITY ───────────────────────────────────────────── */
 .text-red { color: var(--brand-red); }
 .col-list { padding-top: 4px; }
+
+/* ─── SPORTSKEEN ORIGINALS ──────────────────────────────── */
+.originals-section {
+  margin: 32px auto 0;
+}
+.originals-section .section-header {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--brand-red);
+  padding-bottom: 10px;
+}
+.originals-section .section-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 26px;
+  letter-spacing: 1px;
+  color: var(--text-primary);
+  margin: 0;
+}
+.originals-star {
+  color: var(--brand-red);
+  margin-right: 4px;
+}
+.section-subtitle {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.originals-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+@media (max-width: 1024px) {
+  .originals-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 768px) {
+  .originals-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .originals-grid { grid-template-columns: 1fr; }
+}
