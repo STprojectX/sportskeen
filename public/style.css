@@ -427,7 +427,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 
 /* ─── AD UNITS ──────────────────────────────────────────── */
 .ad-wrap {
-  padding: 12px 0;
+  display: none; /* Hidden until AdSense approved */
 }
 
 .ad-unit {
