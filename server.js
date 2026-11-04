@@ -273,5 +273,12 @@ app.get('/api/refresh', async (req, res) => {
   res.json({ success: true, count: articles.length });
 });
 
+app.get('/api/debug', (req, res) => {
+  const exists = fs.existsSync(CONTENT_DIR);
+  let files = [];
+  if (exists) files = fs.readdirSync(CONTENT_DIR);
+  res.json({ CONTENT_DIR, exists, files, __dirname });
+});
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Sports News Portal running at http://localhost:${PORT}`));
