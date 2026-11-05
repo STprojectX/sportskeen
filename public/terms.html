@@ -7,25 +7,46 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<div class="ticker-wrap"><div class="ticker-label">⚡ SPORTSKEEN</div><div class="ticker-track"><span class="ticker-loading">Terms of Use</span></div></div>
-<header class="header">
-  <div class="header-top"><div class="container header-top-inner">
+<div class="ticker-wrap" id="tickerWrap">
+  <div class="ticker-label"><span class="live-dot"></span>LIVE</div>
+  <div class="ticker-track" id="tickerTrack"><span class="ticker-item">Loading latest headlines…</span></div>
+</div>
+<header class="site-header" id="siteHeader">
+  <div class="header-inner container">
     <a href="index.html" class="site-logo">
       <div class="logo-wordmark"><span class="lw-sports">SPORTS</span><span class="lw-keen">KEEN</span></div>
       <div class="logo-divider"></div>
       <div class="logo-tagline"><span>Breaking</span><span>Sports</span><span>News</span></div>
     </a>
-    <div style="flex:1"></div>
-    <div class="header-actions"><a href="index.html" style="color:rgba(255,255,255,.6);font-size:.82rem;font-weight:600;">← Back to Home</a></div>
-  </div></div>
-  <nav class="header-nav"><div class="container nav-inner">
-    <a href="index.html" class="nav-link" style="color:rgba(255,255,255,.7)">Home</a>
-    <a href="about.html" class="nav-link" style="color:rgba(255,255,255,.7)">About</a>
-    <a href="contact.html" class="nav-link" style="color:rgba(255,255,255,.7)">Contact</a>
-    <a href="privacy.html" class="nav-link" style="color:rgba(255,255,255,.7)">Privacy</a>
-    <a href="terms.html" class="nav-link" style="color:white">Terms</a>
-  </div></nav>
+    <div class="header-search">
+      <input type="search" id="searchInput" placeholder="Search sports news…" autocomplete="off" />
+      <button class="search-btn" id="searchBtn" aria-label="Search">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+    </div>
+    <div class="header-actions">
+      <div class="live-badge"><span class="live-dot"></span>LIVE</div>
+    </div>
+  </div>
 </header>
+<nav class="sport-nav" id="sportNav">
+  <div class="container">
+    <div class="sport-nav-inner">
+      <a href="index.html" class="nav-pill" data-sport="all">All Sports</a>
+      <a href="sport.html?sport=Football" class="nav-pill">⚽ Football</a>
+      <a href="sport.html?sport=Cricket" class="nav-pill">🏏 Cricket</a>
+      <a href="sport.html?sport=F1" class="nav-pill">🏎️ F1</a>
+      <a href="sport.html?sport=Tennis" class="nav-pill">🎾 Tennis</a>
+      <a href="sport.html?sport=Basketball" class="nav-pill">🏀 Basketball</a>
+      <a href="sport.html?sport=Rugby" class="nav-pill">🏉 Rugby</a>
+      <a href="sport.html?sport=Golf" class="nav-pill">⛳ Golf</a>
+      <a href="sport.html?sport=Athletics" class="nav-pill">🏃 Athletics</a>
+      <span class="nav-divider"></span>
+      <a href="about.html" class="nav-pill nav-link">About</a>
+      <a href="contact.html" class="nav-pill nav-link">Contact</a>
+    </div>
+  </div>
+</nav>
 <div class="page-hero"><div class="container"><h1>Terms of Use</h1><p>Last updated: November 2026</p></div></div>
 <div class="page-content">
   <p>Welcome to SportsKeen. By accessing or using our website at sportskeen.com, you agree to be bound by these Terms of Use. Please read them carefully before using the site.</p>
