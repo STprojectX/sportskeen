@@ -1207,11 +1207,19 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 }
 
 .footer-logo {
-  font-family: var(--font-serif);
-  font-size: 26px;
-  font-weight: 900;
-  color: #fff;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 32px;
+  letter-spacing: 1px;
+  line-height: 1;
   margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+}
+.footer-logo .lw-sports {
+  color: #fff;
+}
+.footer-logo .lw-keen {
+  color: var(--brand-red);
 }
 
 .footer-tagline {
