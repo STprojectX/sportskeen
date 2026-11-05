@@ -426,8 +426,9 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 }
 
 /* ─── AD UNITS ──────────────────────────────────────────── */
-.ad-wrap {
-  display: none; /* Hidden until AdSense approved */
+.ad-wrap,
+.ad-unit {
+  display: flex;
 }
 
 .ad-unit {
