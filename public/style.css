@@ -426,7 +426,12 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 }
 
 /* ─── AD UNITS ──────────────────────────────────────────── */
-.ad-wrap,
+.ad-wrap {
+  display: flex;
+  justify-content: center;
+  padding: 16px 0;
+}
+
 .ad-unit {
   display: flex;
 }
