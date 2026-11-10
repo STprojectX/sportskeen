@@ -119,6 +119,7 @@ function loadOriginalArticles() {
         ...a,
         original: true,
         source: 'SportsKeen',
+        category: a.sport || a.category,
         image: a.image || SPORT_DEFAULT_IMAGES[a.sport] || null,
       }));
   } catch (e) {
