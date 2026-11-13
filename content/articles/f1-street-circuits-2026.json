@@ -6,8 +6,16 @@
   "sport": "F1",
   "author": "SportsKeen Editorial",
   "pubDate": "2026-11-12T10:00:00Z",
-  "image": "https://images.unsplash.com/photo-1563019891-abb19aa60deb?auto=format&fit=crop&w=1200&q=80",
-  "tags": ["Formula 1", "F1", "Monaco", "Singapore", "Street Circuit", "Baku", "Night Race"],
+  "image": "https://images.unsplash.com/photo-1618220048045-10a6dbdf9e68?auto=format&fit=crop&w=1200&q=80",
+  "tags": [
+    "Formula 1",
+    "F1",
+    "Monaco",
+    "Singapore",
+    "Street Circuit",
+    "Baku",
+    "Night Race"
+  ],
   "original": true,
   "source": "SportsKeen"
 }

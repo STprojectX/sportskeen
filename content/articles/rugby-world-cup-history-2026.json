@@ -6,8 +6,15 @@
   "sport": "Rugby",
   "author": "SportsKeen Editorial",
   "pubDate": "2026-11-07T08:00:00Z",
-  "image": "https://images.unsplash.com/photo-1544298621-35a764730f8a?auto=format&fit=crop&w=1200&q=80",
-  "tags": ["Rugby", "Rugby World Cup", "All Blacks", "Springboks", "History", "England Rugby"],
+  "image": "https://images.unsplash.com/photo-1559467149-77cef58d4c72?auto=format&fit=crop&w=1200&q=80",
+  "tags": [
+    "Rugby",
+    "Rugby World Cup",
+    "All Blacks",
+    "Springboks",
+    "History",
+    "England Rugby"
+  ],
   "original": true,
   "source": "SportsKeen"
 }

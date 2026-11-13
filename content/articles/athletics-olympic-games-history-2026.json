@@ -6,8 +6,16 @@
   "sport": "Athletics",
   "author": "SportsKeen Editorial",
   "pubDate": "2026-11-12T12:00:00Z",
-  "image": "https://images.unsplash.com/photo-1571008887538-b36bb32f4571?auto=format&fit=crop&w=1200&q=80",
-  "tags": ["Athletics", "Olympics", "100 Metres", "Marathon", "Track and Field", "Bolt", "History"],
+  "image": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1200&q=80",
+  "tags": [
+    "Athletics",
+    "Olympics",
+    "100 Metres",
+    "Marathon",
+    "Track and Field",
+    "Bolt",
+    "History"
+  ],
   "original": true,
   "source": "SportsKeen"
 }

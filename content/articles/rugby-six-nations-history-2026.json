@@ -6,8 +6,16 @@
   "sport": "Rugby",
   "author": "SportsKeen Editorial",
   "pubDate": "2026-11-11T08:00:00Z",
-  "image": "https://images.unsplash.com/photo-1575361204480-aadea25e6e68?auto=format&fit=crop&w=1200&q=80",
-  "tags": ["Rugby", "Six Nations", "Grand Slam", "Ireland", "England", "France", "Championship"],
+  "image": "https://images.unsplash.com/photo-1527180083975-14258f63d2cc?auto=format&fit=crop&w=1200&q=80",
+  "tags": [
+    "Rugby",
+    "Six Nations",
+    "Grand Slam",
+    "Ireland",
+    "England",
+    "France",
+    "Championship"
+  ],
   "original": true,
   "source": "SportsKeen"
 }

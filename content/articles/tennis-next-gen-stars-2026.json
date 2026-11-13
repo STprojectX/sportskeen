@@ -6,8 +6,16 @@
   "sport": "Tennis",
   "author": "SportsKeen Editorial",
   "pubDate": "2026-11-13T11:00:00Z",
-  "image": "https://images.unsplash.com/photo-1617711773026-ea31a3f9f3b4?auto=format&fit=crop&w=1200&q=80",
-  "tags": ["Tennis", "Alcaraz", "Sinner", "Next Generation", "Grand Slam", "Rune", "Swiatek"],
+  "image": "https://images.unsplash.com/photo-1591491653056-4e2e4f2e1a1b?auto=format&fit=crop&w=1200&q=80",
+  "tags": [
+    "Tennis",
+    "Alcaraz",
+    "Sinner",
+    "Next Generation",
+    "Grand Slam",
+    "Rune",
+    "Swiatek"
+  ],
   "original": true,
   "source": "SportsKeen"
 }

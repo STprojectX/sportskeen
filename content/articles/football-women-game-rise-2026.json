@@ -6,8 +6,14 @@
   "sport": "Football",
   "author": "SportsKeen Editorial",
   "pubDate": "2026-11-05T16:00:00Z",
-  "image": "https://images.unsplash.com/photo-1529900748604-07564a03e7a6?auto=format&fit=crop&w=1200&q=80",
-  "tags": ["Women's Football", "WSL", "Lionesses", "Women's World Cup", "UEFA Women's Champions League"],
+  "image": "https://images.unsplash.com/photo-1543326727-cf6c39e8f84c?auto=format&fit=crop&w=1200&q=80",
+  "tags": [
+    "Women's Football",
+    "WSL",
+    "Lionesses",
+    "Women's World Cup",
+    "UEFA Women's Champions League"
+  ],
   "original": true,
   "source": "SportsKeen"
 }

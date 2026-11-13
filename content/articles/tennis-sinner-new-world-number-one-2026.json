@@ -6,8 +6,14 @@
   "sport": "Tennis",
   "author": "SportsKeen Editorial",
   "pubDate": "2026-11-04T11:00:00Z",
-  "image": "https://images.unsplash.com/photo-1617711773026-ea31a3f9f3b4?auto=format&fit=crop&w=1200&q=80",
-  "tags": ["Sinner", "Tennis", "World Number One", "Alcaraz", "ATP"],
+  "image": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=1200&q=80",
+  "tags": [
+    "Sinner",
+    "Tennis",
+    "World Number One",
+    "Alcaraz",
+    "ATP"
+  ],
   "original": true,
   "source": "SportsKeen"
 }
