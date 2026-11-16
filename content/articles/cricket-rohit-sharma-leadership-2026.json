@@ -6,8 +6,15 @@
   "sport": "Cricket",
   "author": "SportsKeen Editorial",
   "pubDate": "2026-11-16T09:00:00Z",
-  "image": "https://images.unsplash.com/photo-1631176093617-39b9e3c08e43?auto=format&fit=crop&w=1200&q=80",
-  "tags": ["Cricket", "India", "Rohit Sharma", "T20 World Cup", "Captaincy", "IPL"],
+  "image": "https://images.unsplash.com/photo-1574623451779-c3d2c5e96e43?auto=format&fit=crop&w=1200&q=80",
+  "tags": [
+    "Cricket",
+    "India",
+    "Rohit Sharma",
+    "T20 World Cup",
+    "Captaincy",
+    "IPL"
+  ],
   "original": true,
   "source": "SportsKeen"
 }
