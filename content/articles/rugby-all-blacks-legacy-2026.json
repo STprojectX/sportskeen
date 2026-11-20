@@ -6,8 +6,16 @@
   "sport": "Rugby",
   "author": "SportsKeen Editorial",
   "pubDate": "2026-11-21T10:30:00Z",
-  "image": "https://images.unsplash.com/photo-1555858257-eded5ef50d8e?auto=format&fit=crop&w=1200&q=80",
-  "tags": ["Rugby", "All Blacks", "New Zealand", "Haka", "World Cup", "Rugby Union", "Legacy"],
+  "image": "https://picsum.photos/seed/rugby-all-blacks-legacy-2026/1200/630",
+  "tags": [
+    "Rugby",
+    "All Blacks",
+    "New Zealand",
+    "Haka",
+    "World Cup",
+    "Rugby Union",
+    "Legacy"
+  ],
   "original": true,
   "source": "SportsKeen"
 }

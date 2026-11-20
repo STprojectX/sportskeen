@@ -6,8 +6,15 @@
   "sport": "Football",
   "author": "SportsKeen Editorial",
   "pubDate": "2026-11-18T08:00:00Z",
-  "image": "https://images.unsplash.com/photo-1606925797300-0b35e9d1794e?auto=format&fit=crop&w=1200&q=80",
-  "tags": ["Football", "Arsenal", "Premier League", "Arteta", "Saka", "Title Race"],
+  "image": "https://picsum.photos/seed/football-arsenal-2026-title-challengers/1200/630",
+  "tags": [
+    "Football",
+    "Arsenal",
+    "Premier League",
+    "Arteta",
+    "Saka",
+    "Title Race"
+  ],
   "original": true,
   "source": "SportsKeen"
 }

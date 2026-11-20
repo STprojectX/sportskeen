@@ -6,8 +6,16 @@
   "sport": "Golf",
   "author": "SportsKeen Editorial",
   "pubDate": "2026-11-21T11:00:00Z",
-  "image": "https://images.unsplash.com/photo-1576396833555-5c8db0fb57f5?auto=format&fit=crop&w=1200&q=80",
-  "tags": ["Golf", "Majors", "Masters", "US Open", "The Open", "PGA Championship", "2027"],
+  "image": "https://picsum.photos/seed/golf-majors-schedule-preview-2027/1200/630",
+  "tags": [
+    "Golf",
+    "Majors",
+    "Masters",
+    "US Open",
+    "The Open",
+    "PGA Championship",
+    "2027"
+  ],
   "original": true,
   "source": "SportsKeen"
 }

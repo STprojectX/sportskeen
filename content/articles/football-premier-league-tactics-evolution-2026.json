@@ -6,8 +6,16 @@
   "sport": "Football",
   "author": "SportsKeen Editorial",
   "pubDate": "2026-11-20T12:00:00Z",
-  "image": "https://images.unsplash.com/photo-1517649763962-0c623066013c?auto=format&fit=crop&w=1200&q=80",
-  "tags": ["Football", "Premier League", "Tactics", "Pressing", "Data Analytics", "Guardiola", "Klopp"],
+  "image": "https://picsum.photos/seed/football-premier-league-tactics-evolution-2026/1200/630",
+  "tags": [
+    "Football",
+    "Premier League",
+    "Tactics",
+    "Pressing",
+    "Data Analytics",
+    "Guardiola",
+    "Klopp"
+  ],
   "original": true,
   "source": "SportsKeen"
 }

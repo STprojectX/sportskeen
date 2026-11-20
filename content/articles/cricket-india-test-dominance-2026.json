@@ -6,8 +6,15 @@
   "sport": "Cricket",
   "author": "SportsKeen Editorial",
   "pubDate": "2026-11-20T08:30:00Z",
-  "image": "https://images.unsplash.com/photo-1540747913346-19212a4cf656?auto=format&fit=crop&w=1200&q=80",
-  "tags": ["Cricket", "India", "Test Cricket", "BCCI", "Away Series", "Batting"],
+  "image": "https://picsum.photos/seed/cricket-india-test-dominance-2026/1200/630",
+  "tags": [
+    "Cricket",
+    "India",
+    "Test Cricket",
+    "BCCI",
+    "Away Series",
+    "Batting"
+  ],
   "original": true,
   "source": "SportsKeen"
 }

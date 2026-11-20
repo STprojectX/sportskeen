@@ -6,8 +6,16 @@
   "sport": "F1",
   "author": "SportsKeen Editorial",
   "pubDate": "2026-11-18T09:00:00Z",
-  "image": "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=1200&q=80",
-  "tags": ["Formula 1", "F1", "2026 Regulations", "Power Unit", "Aerodynamics", "Mercedes", "Honda"],
+  "image": "https://picsum.photos/seed/f1-new-regulations-2026-preview/1200/630",
+  "tags": [
+    "Formula 1",
+    "F1",
+    "2026 Regulations",
+    "Power Unit",
+    "Aerodynamics",
+    "Mercedes",
+    "Honda"
+  ],
   "original": true,
   "source": "SportsKeen"
 }

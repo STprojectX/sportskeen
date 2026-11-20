@@ -6,8 +6,15 @@
   "sport": "Athletics",
   "author": "SportsKeen Editorial",
   "pubDate": "2026-11-18T11:30:00Z",
-  "image": "https://images.unsplash.com/photo-1483721310020-03333e577078?auto=format&fit=crop&w=1200&q=80",
-  "tags": ["Athletics", "Marathon", "Kipchoge", "World Record", "Sub Two Hours", "Endurance"],
+  "image": "https://picsum.photos/seed/athletics-marathon-world-record-history-2026/1200/630",
+  "tags": [
+    "Athletics",
+    "Marathon",
+    "Kipchoge",
+    "World Record",
+    "Sub Two Hours",
+    "Endurance"
+  ],
   "original": true,
   "source": "SportsKeen"
 }

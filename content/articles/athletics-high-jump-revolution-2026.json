@@ -6,8 +6,16 @@
   "sport": "Athletics",
   "author": "SportsKeen Editorial",
   "pubDate": "2026-11-21T11:30:00Z",
-  "image": "https://images.unsplash.com/photo-1636107269671-01b7c50d0d7b?auto=format&fit=crop&w=1200&q=80",
-  "tags": ["Athletics", "High Jump", "World Record", "Sotomayor", "Tamberi", "Barshim", "Track and Field"],
+  "image": "https://picsum.photos/seed/athletics-high-jump-revolution-2026/1200/630",
+  "tags": [
+    "Athletics",
+    "High Jump",
+    "World Record",
+    "Sotomayor",
+    "Tamberi",
+    "Barshim",
+    "Track and Field"
+  ],
   "original": true,
   "source": "SportsKeen"
 }

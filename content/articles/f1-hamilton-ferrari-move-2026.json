@@ -6,8 +6,15 @@
   "sport": "F1",
   "author": "SportsKeen Editorial",
   "pubDate": "2026-11-14T10:00:00Z",
-  "image": "https://images.unsplash.com/photo-1569924702665-5673b46a46a0?auto=format&fit=crop&w=1200&q=80",
-  "tags": ["Formula 1", "F1", "Hamilton", "Ferrari", "Mercedes", "World Championship"],
+  "image": "https://picsum.photos/seed/f1-hamilton-ferrari-move-2026/1200/630",
+  "tags": [
+    "Formula 1",
+    "F1",
+    "Hamilton",
+    "Ferrari",
+    "Mercedes",
+    "World Championship"
+  ],
   "original": true,
   "source": "SportsKeen"
 }

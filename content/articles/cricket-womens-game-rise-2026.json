@@ -6,8 +6,15 @@
   "sport": "Cricket",
   "author": "SportsKeen Editorial",
   "pubDate": "2026-11-20T12:30:00Z",
-  "image": "https://images.unsplash.com/photo-1612878010492-8f5543d26c95?auto=format&fit=crop&w=1200&q=80",
-  "tags": ["Cricket", "Women's Cricket", "Australia", "India", "Professional", "T20 World Cup"],
+  "image": "https://picsum.photos/seed/cricket-womens-game-rise-2026/1200/630",
+  "tags": [
+    "Cricket",
+    "Women's Cricket",
+    "Australia",
+    "India",
+    "Professional",
+    "T20 World Cup"
+  ],
   "original": true,
   "source": "SportsKeen"
 }

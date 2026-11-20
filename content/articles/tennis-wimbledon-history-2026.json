@@ -6,8 +6,15 @@
   "sport": "Tennis",
   "author": "SportsKeen Editorial",
   "pubDate": "2026-11-14T11:00:00Z",
-  "image": "https://images.unsplash.com/photo-1611457194403-d3aca4cf9d11?auto=format&fit=crop&w=1200&q=80",
-  "tags": ["Tennis", "Wimbledon", "Grand Slam", "Federer", "Navratilova", "Grass Court"],
+  "image": "https://picsum.photos/seed/tennis-wimbledon-history-2026/1200/630",
+  "tags": [
+    "Tennis",
+    "Wimbledon",
+    "Grand Slam",
+    "Federer",
+    "Navratilova",
+    "Grass Court"
+  ],
   "original": true,
   "source": "SportsKeen"
 }

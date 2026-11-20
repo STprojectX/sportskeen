@@ -6,8 +6,15 @@
   "sport": "Tennis",
   "author": "SportsKeen Editorial",
   "pubDate": "2026-11-21T09:30:00Z",
-  "image": "https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=1200&q=80",
-  "tags": ["Tennis", "Doubles", "Bryan Brothers", "Grand Slam", "Net Play", "Partnership"],
+  "image": "https://picsum.photos/seed/tennis-doubles-art-of-2026/1200/630",
+  "tags": [
+    "Tennis",
+    "Doubles",
+    "Bryan Brothers",
+    "Grand Slam",
+    "Net Play",
+    "Partnership"
+  ],
   "original": true,
   "source": "SportsKeen"
 }

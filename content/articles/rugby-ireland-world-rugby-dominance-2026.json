@@ -6,8 +6,15 @@
   "sport": "Rugby",
   "author": "SportsKeen Editorial",
   "pubDate": "2026-11-14T12:00:00Z",
-  "image": "https://images.unsplash.com/photo-1495555775698-b1c40c24fd7d?auto=format&fit=crop&w=1200&q=80",
-  "tags": ["Rugby", "Ireland", "Six Nations", "Grand Slam", "Andy Farrell", "World Rankings"],
+  "image": "https://picsum.photos/seed/rugby-ireland-world-rugby-dominance-2026/1200/630",
+  "tags": [
+    "Rugby",
+    "Ireland",
+    "Six Nations",
+    "Grand Slam",
+    "Andy Farrell",
+    "World Rankings"
+  ],
   "original": true,
   "source": "SportsKeen"
 }
